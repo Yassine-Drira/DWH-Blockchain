@@ -14,7 +14,7 @@ print(f"Columns: {df.columns.tolist()}")
 try:
     conn = pyodbc.connect(
         'DRIVER={SQL Server};'
-        'SERVER=localhost;'
+        'SERVER=mohsen2;'
         'DATABASE=CryptoSourceDB;'
         'Trusted_Connection=yes'
     )

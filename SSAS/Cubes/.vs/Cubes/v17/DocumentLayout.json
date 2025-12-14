@@ -1,0 +1,56 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kouss\\Documents\\DWH-Blockchain\\SSAS\\Cubes\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB4D3F3-A31A-496E-080F-E60AD7831A1E}|Cubes\\Cubes.dwproj|C:\\Users\\kouss\\Documents\\DWH-Blockchain\\SSAS\\Cubes\\Cubes\\Crypto DW.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{AFB4D3F3-A31A-496E-080F-E60AD7831A1E}|Cubes\\Cubes.dwproj|solutionrelative:Cubes\\Crypto DW.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB4D3F3-A31A-496E-080F-E60AD7831A1E}|Cubes\\Cubes.dwproj|C:\\Users\\kouss\\Documents\\DWH-Blockchain\\SSAS\\Cubes\\Cubes\\Crypto DW.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{AFB4D3F3-A31A-496E-080F-E60AD7831A1E}|Cubes\\Cubes.dwproj|solutionrelative:Cubes\\Crypto DW.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Crypto DW.cube [Design]",
+              "DocumentMoniker": "C:\\Users\\kouss\\Documents\\DWH-Blockchain\\SSAS\\Cubes\\Cubes\\Crypto DW.cube",
+              "RelativeDocumentMoniker": "Cubes\\Crypto DW.cube",
+              "ToolTip": "C:\\Users\\kouss\\Documents\\DWH-Blockchain\\SSAS\\Cubes\\Cubes\\Crypto DW.cube [Design]",
+              "RelativeToolTip": "Cubes\\Crypto DW.cube [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-13T23:32:33.697Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Crypto DW.dsv [Design]",
+              "DocumentMoniker": "C:\\Users\\kouss\\Documents\\DWH-Blockchain\\SSAS\\Cubes\\Cubes\\Crypto DW.dsv",
+              "RelativeDocumentMoniker": "Cubes\\Crypto DW.dsv",
+              "ToolTip": "C:\\Users\\kouss\\Documents\\DWH-Blockchain\\SSAS\\Cubes\\Cubes\\Crypto DW.dsv [Design]",
+              "RelativeToolTip": "Cubes\\Crypto DW.dsv [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-13T21:51:56.595Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{f4e46f1e-cf83-40aa-b568-a627394bc994}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

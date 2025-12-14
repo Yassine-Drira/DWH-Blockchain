@@ -1,0 +1,125 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b4363259-73fc-427b-93c4-349ee798da2a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Crypto DW</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Fact Blockchain Activity</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="a8e3b8f2-c33e-40b0-813a-caaeca1c6f73">
+          <ID>Fact Blockchain Activity</ID>
+          <Name>Fact Blockchain Activity</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a495c21e-29fe-4a5e-b081-f57ddb4ca73c">
+            <DataSourceViewID>Crypto DW</DataSourceViewID>
+            <TableID>dbo_FactBlockchainActivity</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Market Snapshot</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="36209bad-a1f3-405b-ae73-05779691e1fc">
+          <ID>Fact Market Snapshot</ID>
+          <Name>Fact Market Snapshot</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="430b6842-f044-476f-b75b-0335345e8d66">
+            <DataSourceViewID>Crypto DW</DataSourceViewID>
+            <TableID>dbo_FactMarketSnapshot</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Mood Index</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="a3c5c166-4da2-4752-afde-470fa17bee51">
+          <ID>Fact Mood Index</ID>
+          <Name>Fact Mood Index</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ebbf17bc-e8e4-42db-a37b-987e61ae1b1f">
+            <DataSourceViewID>Crypto DW</DataSourceViewID>
+            <TableID>dbo_FactMoodIndex</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact News Sentiment</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="6c53ed0a-a43a-4ac8-9d7f-40695cf2037c">
+          <ID>Fact News Sentiment</ID>
+          <Name>Fact News Sentiment</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ca1554a8-6b36-4a0d-aab6-123af137bc37">
+            <DataSourceViewID>Crypto DW</DataSourceViewID>
+            <TableID>dbo_FactNewsSentiment</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Price Daily</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="4e4b8076-7691-405c-aa58-a07b26faa9e3">
+          <ID>Fact Price Daily</ID>
+          <Name>Fact Price Daily</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ea157f08-169c-405c-9879-2f072c297f02">
+            <DataSourceViewID>Crypto DW</DataSourceViewID>
+            <TableID>dbo_FactPriceDaily</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Trades</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="cbcbda5b-5dbd-4cde-8442-04eca2031f26">
+          <ID>Fact Trades</ID>
+          <Name>Fact Trades</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ac12a6a9-7ae3-4b0c-bc54-eab166e6f7df">
+            <DataSourceViewID>Crypto DW</DataSourceViewID>
+            <TableID>dbo_FactTrades</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

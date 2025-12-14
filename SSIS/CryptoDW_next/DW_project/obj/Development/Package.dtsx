@@ -11,10 +11,259 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="68"
-  DTS:VersionGUID="{BAEBECE1-8799-4850-AB11-3FFAD76445F6}">
+  DTS:VersionBuild="95"
+  DTS:VersionGUID="{9118A206-4892-4061-B821-3C3982A6184B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[metrics]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{92577E45-FC7E-496A-8D3C-26F0C1FDF867}"
+      DTS:ObjectName="metrics">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x002C_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\kouss\Documents\DWH-Blockchain\data\raw\onchain_.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="coin_symbol"
+              DTS:DTSID="{D9874C47-06B5-4954-B957-C41A67A4A9AF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="133"
+              DTS:TextQualified="True"
+              DTS:ObjectName="date"
+              DTS:DTSID="{A7B6FACA-3145-4614-9CB5-F087E6CF209E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="active_addresses"
+              DTS:DTSID="{D3B7EF4D-8EE5-4B3B-AC64-C70EC778170D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="block_count"
+              DTS:DTSID="{EE885ACE-DC51-47A3-A707-C53608035B63}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="tx_count"
+              DTS:DTSID="{9A2B7CB6-48D8-46BC-83EA-D5DF05F4AD90}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[prices]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{94B65B49-1ED6-42C8-A58A-BB6DA9A83748}"
+      DTS:ObjectName="prices">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x002C_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\kouss\Documents\DWH-Blockchain\data\raw\prices_.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="133"
+              DTS:TextQualified="True"
+              DTS:ObjectName="date"
+              DTS:DTSID="{2724963F-A29B-43BE-92D4-6EB2D42E8F9F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="14"
+              DTS:DataScale="8"
+              DTS:TextQualified="True"
+              DTS:ObjectName="open"
+              DTS:DTSID="{9EEC140F-F223-4F95-9CEB-2ED5E0027125}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="14"
+              DTS:DataScale="8"
+              DTS:TextQualified="True"
+              DTS:ObjectName="high"
+              DTS:DTSID="{B036B34A-5AE1-4C11-AC66-C4A96651E809}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="14"
+              DTS:DataScale="8"
+              DTS:TextQualified="True"
+              DTS:ObjectName="low"
+              DTS:DTSID="{ADB478AD-7378-4E34-A345-8CCE1099845F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="14"
+              DTS:DataScale="8"
+              DTS:TextQualified="True"
+              DTS:ObjectName="close"
+              DTS:DTSID="{B705D6F1-0389-45BB-A00C-B5B0FF0989E2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="14"
+              DTS:DataScale="8"
+              DTS:TextQualified="True"
+              DTS:ObjectName="volume"
+              DTS:DTSID="{11DF3D5A-5095-4392-B499-DC4E6EF6CA67}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="14"
+              DTS:DataScale="8"
+              DTS:TextQualified="True"
+              DTS:ObjectName="quote_volume"
+              DTS:DTSID="{1407B175-1DE3-4DF4-9BFE-64F8C16B0EE2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="trades"
+              DTS:DTSID="{EEE6E867-CBB6-43F5-B07D-8626E9D7303E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="14"
+              DTS:DataScale="8"
+              DTS:TextQualified="True"
+              DTS:ObjectName="taker_buy_volume"
+              DTS:DTSID="{01BD8755-C70E-474E-A8A9-22FDF54409DF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="14"
+              DTS:DataScale="8"
+              DTS:TextQualified="True"
+              DTS:ObjectName="taker_buy_quote"
+              DTS:DTSID="{DEFFA562-BAD6-4436-8AF6-90EDEC0B0B3C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="coin"
+              DTS:DTSID="{032E7101-2A1E-4959-89BB-2C72BC8DB43E}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Trades]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{B193749C-358D-48CF-91AC-EF179855BB4D}"
+      DTS:ObjectName="Trades">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x002C_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\kouss\Documents\DWH-Blockchain\data\raw\trades_.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="aggId"
+              DTS:DTSID="{58C509DA-E67C-4AEC-BD1E-39EC19194775}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="price"
+              DTS:DTSID="{F5796027-78ED-4E04-8586-D6683DCB72E6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="quantity"
+              DTS:DTSID="{9C5B4FDA-C9B1-49BE-A3FA-C2E25A0FC298}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="133"
+              DTS:TextQualified="True"
+              DTS:ObjectName="date"
+              DTS:DTSID="{7DF540E6-867A-485B-A52B-EB04B34D0BC6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="buyerMaker"
+              DTS:DTSID="{96621857-F24B-4E60-8980-7ED088771D8F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="coin"
+              DTS:DTSID="{5B2D6C62-92CA-4C45-9CF4-6E11A36931EA}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
@@ -23,7 +272,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="jsonfile">
       <DTS:VariableValue
-        DTS:DataType="8">"C:\Users\yassi\Desktop\DW_Project\data\raw\fear_greed.json"</DTS:VariableValue>
+        DTS:DataType="8">"C:\Users\kouss\Documents\DWH-Blockchain\data\raw\fear_greed.json"</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -354,8 +603,8 @@ where [refTable].[full_date] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load DimDate\Lookup.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -573,8 +822,8 @@ where [refTable].[full_date] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load DimDate\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -735,8 +984,8 @@ SELECT snapshot_date FROM StgMarketLive</property>
               <connections>
                 <connection
                   refId="Package\Load DimDate\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1090,8 +1339,8 @@ where [refTable].[full_date] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load FactBlockchain\Lookup.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -1248,8 +1497,8 @@ where [refTable].[coin_symbol] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load FactBlockchain\Lookup 1.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -1395,8 +1644,8 @@ where [refTable].[coin_symbol] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load FactBlockchain\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1544,8 +1793,8 @@ where [refTable].[coin_symbol] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load FactBlockchain\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1869,8 +2118,8 @@ where [refTable].[full_date] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load FactMarketLive\Lookup.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -2027,8 +2276,8 @@ where [refTable].[coin_name] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load FactMarketLive\Lookup 1.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -2174,8 +2423,8 @@ where [refTable].[coin_name] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load FactMarketLive\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2339,8 +2588,8 @@ where [refTable].[coin_name] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load FactMarketLive\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2440,8 +2689,8 @@ where [refTable].[coin_name] = ?</property>
                       refId="Package\Load FactMarketLive\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[volume_24h]"
                       dataType="numeric"
                       name="volume_24h"
-                      precision="20"
-                      scale="2" />
+                      precision="18"
+                      scale="8" />
                     <externalMetadataColumn
                       refId="Package\Load FactMarketLive\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[change_24h]"
                       dataType="r8"
@@ -2484,8 +2733,8 @@ where [refTable].[coin_name] = ?</property>
                       dataType="numeric"
                       lineageId="Package\Load FactMarketLive\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[volume_24h]"
                       name="volume_24h"
-                      precision="20"
-                      scale="2" />
+                      precision="18"
+                      scale="8" />
                     <outputColumn
                       refId="Package\Load FactMarketLive\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[change_24h]"
                       dataType="r8"
@@ -2700,8 +2949,8 @@ where [refTable].[full_date] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load FactMood\Lookup.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -2858,8 +3107,8 @@ where [refTable].[classification] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load FactMood\Lookup 1.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -3005,8 +3254,8 @@ where [refTable].[classification] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load FactMood\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3134,8 +3383,8 @@ where [refTable].[classification] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load FactMood\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3423,8 +3672,8 @@ where [refTable].[full_date] = ?</property>
               <connections>
                 <connection
                   refId="Package\load FactNewsSentiment\Lookup.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -3581,8 +3830,8 @@ where [refTable].[coin_symbol] = ?</property>
               <connections>
                 <connection
                   refId="Package\load FactNewsSentiment\Lookup 1.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -3739,8 +3988,8 @@ where [refTable].[sentiment_class] = ?</property>
               <connections>
                 <connection
                   refId="Package\load FactNewsSentiment\Lookup 2.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -3886,8 +4135,8 @@ where [refTable].[sentiment_class] = ?</property>
               <connections>
                 <connection
                   refId="Package\load FactNewsSentiment\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -4047,8 +4296,8 @@ where [refTable].[sentiment_class] = ?</property>
               <connections>
                 <connection
                   refId="Package\load FactNewsSentiment\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -4422,8 +4671,8 @@ where [refTable].[full_date] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load FactPrice\Lookup.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -4580,8 +4829,8 @@ where [refTable].[coin_name] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load FactPrice\Lookup 1.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -4727,8 +4976,8 @@ where [refTable].[coin_name] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load FactPrice\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -4916,8 +5165,8 @@ where [refTable].[coin_name] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load FactPrice\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -5478,8 +5727,8 @@ where [refTable].[full_date] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load FactTrade_\Lookup.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -5636,8 +5885,8 @@ where [refTable].[coin_symbol] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load FactTrade_\Lookup 1.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -5794,8 +6043,8 @@ where [refTable].[label] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load FactTrade_\Lookup 2.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -5941,8 +6190,8 @@ where [refTable].[label] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load FactTrade_\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -6094,8 +6343,8 @@ where [refTable].[label] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load FactTrade_\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -6174,12 +6423,16 @@ where [refTable].[label] = ?</property>
                       name="aggId" />
                     <externalMetadataColumn
                       refId="Package\Load FactTrade_\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[price]"
-                      dataType="r8"
-                      name="price" />
+                      dataType="numeric"
+                      name="price"
+                      precision="18"
+                      scale="8" />
                     <externalMetadataColumn
                       refId="Package\Load FactTrade_\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[quantity]"
-                      dataType="r8"
-                      name="quantity" />
+                      dataType="numeric"
+                      name="quantity"
+                      precision="18"
+                      scale="8" />
                     <externalMetadataColumn
                       refId="Package\Load FactTrade_\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[trade_date]"
                       dataType="wstr"
@@ -6203,14 +6456,18 @@ where [refTable].[label] = ?</property>
                       name="aggId" />
                     <outputColumn
                       refId="Package\Load FactTrade_\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[price]"
-                      dataType="r8"
+                      dataType="numeric"
                       lineageId="Package\Load FactTrade_\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[price]"
-                      name="price" />
+                      name="price"
+                      precision="18"
+                      scale="8" />
                     <outputColumn
                       refId="Package\Load FactTrade_\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[quantity]"
-                      dataType="r8"
+                      dataType="numeric"
                       lineageId="Package\Load FactTrade_\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[quantity]"
-                      name="quantity" />
+                      name="quantity"
+                      precision="18"
+                      scale="8" />
                     <outputColumn
                       refId="Package\Load FactTrade_\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[trade_date]"
                       dataType="wstr"
@@ -6317,8 +6574,8 @@ where [refTable].[label] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load StgBlockchain\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="{5292184D-D9DE-44BB-A5CB-118AAD486ECE}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[FFMetrics]"
+                  connectionManagerID="Package.ConnectionManagers[metrics]"
+                  connectionManagerRefId="Package.ConnectionManagers[metrics]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -6541,8 +6798,8 @@ where [refTable].[label] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load StgBlockchain\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -6722,8 +6979,8 @@ where [refTable].[label] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load StgGreed\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -7050,7 +7307,7 @@ public class ScriptMain : UserComponent
 {
     public override void CreateNewOutputRows()
     {
-        string path = @"C:\Users\yassi\Desktop\DW_Project\data\raw\fear_greed.json";
+        string path = @"C:\Users\kouss\Documents\DWH-Blockchain\data\raw\fear_greed.json";
 
         if (!File.Exists(path))
             return;
@@ -7404,7 +7661,7 @@ namespace SC_cd9eea4ca4d743fbba7d1f2d30b56af8.Properties {
     <msb:CodeName>SC_cd9eea4ca4d743fbba7d1f2d30b56af8</msb:CodeName>
     <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>SC_cd9eea4ca4d743fbba7d1f2d30b56af8</msb:DisplayName>
-    <msb:ProjectId>{77F66617-60E5-4AC3-AD7E-7748B35DA8E2}</msb:ProjectId>
+    <msb:ProjectId>{4015DC77-DA93-4879-9936-EABAC0605886}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="SC_cd9eea4ca4d743fbba7d1f2d30b56af8.csproj" />
@@ -7551,37 +7808,37 @@ namespace SC_cd9eea4ca4d743fbba7d1f2d30b56af8.Properties {
                     <arrayElement
                       dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAGwVN2kAAAAAAAAAAOAAIiALATAAABwAAAAIAAAAAAAAkjsA
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAAvTPWkAAAAAAAAAAOAAIiALATAAABwAAAAIAAAAAAAAojsA
 AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
-ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAEA7AABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAFA7AABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
 AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAmBsAAAAgAAAAHAAAAAIA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAqBsAAAAgAAAAHAAAAAIA
 AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAQAAAAAYAAAAeAAAAAAAAAAAAAAAAAABAAABA
-LnJlbG9jAAAMAAAAAGAAAAACAAAAJAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAAB0
-OwAAAAAAAEgAAAACAAUAxCQAAMQVAAABAAAAAAAAAIg6AAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAABswBQA8AgAAAQAAEXIBAABwCgYoEAAACi0BKgYoEQAACnJ3
-AABwKBIAAApvEwAACgs48AEAAAdvFAAACnQSAAABbxUAAAoMAghykQAAcCgCAAAGJS0dJgIIcpsA
-AHAoAgAABiUtDSYCCHKvAABwKAIAAAYNAghyuQAAcCgCAAAGJS0NJgIIcsUAAHAoAgAABhMEAghy
-5wAAcCgCAAAGJS0dJgIIchEBAHAoAgAABiUtDSYCCHIzAQBwKAIAAAYWEwYJKBYAAAotdgkSCigX
+LnJlbG9jAAAMAAAAAGAAAAACAAAAJAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAACE
+OwAAAAAAAEgAAAACAAUAxCQAANQVAAABAAAAAAAAAJg6AAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAABswBQA8AgAAAQAAEXIBAABwCgYoEAAACi0BKgYoEQAACnKE
+AABwKBIAAApvEwAACgs48AEAAAdvFAAACnQSAAABbxUAAAoMAghyngAAcCgCAAAGJS0dJgIIcqgA
+AHAoAgAABiUtDSYCCHK8AABwKAIAAAYNAghyxgAAcCgCAAAGJS0NJgIIctIAAHAoAgAABhMEAghy
+9AAAcCgCAAAGJS0dJgIIch4BAHAoAgAABiUtDSYCCHJAAQBwKAIAAAYWEwYJKBYAAAotdgkSCigX
 AAAKLGARCiEAgMakfo0DADEbEQog6AMAAGpbKBgAAAoTCxILKBkAAAoTBSszEQohABCl1OgAAAAx
 FBEKKBgAAAoTCxILKBkAAAoTBSsSEQooGgAAChMLEgsoGQAAChMFFxMGKxMJEgUoGwAAChMGKwd+
 HAAAChMFFhMHFhMIEQQoFgAACi0iEQQg/wEAACgdAAAKEgwoHgAACiwNEQwoHwAACmkTBxcTCAJ7
 AwAABG8LAAAGEQYsDwJ7AwAABBEFbwkAAAYrDAJ7AwAABBdvCgAABhEILA8CewMAAAQRB28FAAAG
-KwwCewMAAAQXbwYAAAYTCREJKBYAAAoRCF8sNBEHHxkvCXI/AQBwEwkrJREHHzIvCXJZAQBwEwkr
-FhEHH0EvCXJjAQBwEwkrB3JvAQBwEwkRCSgWAAAKLQ8CewMAAAQRCW8HAAAGKwwCewMAAAQXbwgA
+KwwCewMAAAQXbwYAAAYTCREJKBYAAAoRCF8sNBEHHxkvCXJMAQBwEwkrJREHHzIvCXJmAQBwEwkr
+FhEHH0EvCXJwAQBwEwkrB3J8AQBwEwkRCSgWAAAKLQ8CewMAAAQRCW8HAAAGKwwCewMAAAQXbwgA
 AAYHbyAAAAo6Bf7//94UB3URAAABEw0RDSwHEQ1vIQAACtwqQRwAAAIAAAAlAAAAAgIAACcCAAAU
-AAAAAAAAABMwBAAzAAAAAgAAEQNyiwEAcARyjwEAcCgiAAAKKCMAAAoKBm8kAAAKLQIUKgZvJQAA
+AAAAAAAAABMwBAAzAAAAAgAAEQNymAEAcARynAEAcCgiAAAKKCMAAAoKBm8kAAAKLQIUKgZvJQAA
 ChdvJgAACm8VAAAKKh4CKA4AAAYqKgIDBAUoJwAACio6AhYDjCsAAAEoKAAACipaAywIAhYoKQAA
-CipyvQEAcHMqAAAKeiYCFwMoKAAACipaAywIAhcoKQAACipyvQEAcHMqAAAKejoCGAOMDwAAASgo
-AAAKKloDLAgCGCgpAAAKKnK9AQBwcyoAAAp6HgIoKwAACioeAigsAAAKKh4CKC0AAAoqfgIoLgAA
+CipyygEAcHMqAAAKeiYCFwMoKAAACipaAywIAhcoKQAACipyygEAcHMqAAAKejoCGAOMDwAAASgo
+AAAKKloDLAgCGCgpAAAKKnLKAQBwcyoAAAp6HgIoKwAACioeAigsAAAKKh4CKC0AAAoqfgIoLgAA
 CgICcxMAAAZ9AQAABAICcxQAAAZ9AgAABCoGKm4CewMAAAQsEgJ7AwAABG8MAAAGAhR9AwAABCoA
-AAATMAUASQAAAAMAABEWCisuBAaUDgRyWgIAcCgvAAAKMxkCBQaaAgQGlCgwAAAKDgRzBAAABn0D
+AAATMAUASQAAAAMAABEWCisuBAaUDgRyZwIAcCgvAAAKMxkCBQaaAgQGlCgwAAAKDgRzBAAABn0D
 AAAEBhdYCgYDMs4CbxIAAAYCbw8AAAYCKBAAAAYqOgIoMQAACgIDfQQAAAQqOgIoMQAACgIDfQUA
-AAQqlgJ7BQAABG8yAAAKcmwCAHBvMwAACig0AAAKbzUAAAp0IwAAASoeAigxAAAKKq5+BgAABC0e
-cn4CAHDQBwAAAig2AAAKbzcAAApzOAAACoAGAAAEfgYAAAQqGn4HAAAEKh4CgAcAAAQqGn4IAAAE
+AAQqlgJ7BQAABG8yAAAKcnkCAHBvMwAACig0AAAKbzUAAAp0IwAAASoeAigxAAAKKq5+BgAABC0e
+cosCAHDQBwAAAig2AAAKbzcAAApzOAAACoAGAAAEfgYAAAQqGn4HAAAEKh4CgAcAAAQqGn4IAAAE
 Kh4CKDkAAAoqLnMbAAAGgAgAAAQqAEJTSkIBAAEAAAAAAAwAAAB2NC4wLjMwMzE5AAAAAAUAbAAA
-APgGAAAjfgAAZAcAABgJAAAjU3RyaW5ncwAAAAB8EAAA8AIAACNVUwBsEwAAEAAAACNHVUlEAAAA
-fBMAAEgCAAAjQmxvYgAAAAAAAAACAAABVxWiAQkBAAAA+gEzABYAAAEAAAAzAAAACAAAAAgAAAAc
+APgGAAAjfgAAZAcAABgJAAAjU3RyaW5ncwAAAAB8EAAAAAMAACNVUwB8EwAAEAAAACNHVUlEAAAA
+jBMAAEgCAAAjQmxvYgAAAAAAAAACAAABVxWiAQkBAAAA+gEzABYAAAEAAAAzAAAACAAAAAgAAAAc
 AAAAEgAAADkAAAAQAAAAAwAAAAQAAAAKAAAACwAAAAEAAAAFAAAAAQAAAAAA8wMBAAAAAAAGAMYC
 VAYGAFoDVAYGABICFAYPAMgGAAAGAD8C1AQGAKkC1AQGAIoC1AQGAEED1AQGAOYC1AQGAP8C1AQG
 AFYC1AQGAHECpwMKABoDKAEGAOMFfgcGAB8BeQQGAPMHeQQGAM8AeQQOAMgDXwcKAJoFKAESAIsF
@@ -7653,36 +7910,36 @@ AFVzZXJDb21wb25lbnQAUGFyZW50Q29tcG9uZW50AFNjcmlwdENvbXBvbmVudABnZXRfQ3VycmVu
 dABNaWNyb3NvZnQuU3FsU2VydmVyLlR4U2NyaXB0AE1pY3Jvc29mdC5TcWxTZXJ2ZXIuUGlwZWxp
 bmVIb3N0AFByaW1lT3V0cHV0AE1vdmVOZXh0AFJlYWRBbGxUZXh0AEdldFZhbHVlV2l0aENvbnRl
 eHQAU2NyaXB0Q29tcG9uZW50RXZhbENvbnRleHQAZ2V0X0V2YWx1YXRvckNvbnRleHQAQWRkUm93
-AFJlZ2V4AGtleQBnZXRfQXNzZW1ibHkAAHVDADoAXABVAHMAZQByAHMAXAB5AGEAcwBzAGkAXABE
-AGUAcwBrAHQAbwBwAFwARABXAF8AUAByAG8AagBlAGMAdABcAGQAYQB0AGEAXAByAGEAdwBcAGYA
-ZQBhAHIAXwBnAHIAZQBlAGQALgBqAHMAbwBuAAAZXAB7AFsAXgBcAHsAXAB9AF0AKgBcAH0AAAlk
-AGEAdABlAAATdABpAG0AZQBzAHQAYQBtAHAAAAl0AGkAbQBlAAALdgBhAGwAdQBlAAAhZgBlAGEA
-cgBfAGcAcgBlAGUAZABfAHYAYQBsAHUAZQAAKXYAYQBsAHUAZQBfAGMAbABhAHMAcwBpAGYAaQBj
-AGEAdABpAG8AbgAAIWYAZQBhAHIAXwBnAHIAZQBlAGQAXwBjAGwAYQBzAHMAAAtsAGEAYgBlAGwA
-ABlFAHgAdAByAGUAbQBlACAARgBlAGEAcgAACUYAZQBhAHIAAAtHAHIAZQBlAGQAABtFAHgAdABy
-AGUAbQBlACAARwByAGUAZQBkAAADIgAALSIAXABzACoAOgBcAHMAKgAiAD8AKAAuACoAPwApACIA
-PwAoACwAfAAkACkAAICbSQBzAE4AdQBsAGwAIABwAHIAbwBwAGUAcgB0AHkAIABjAGEAbgBuAG8A
-dAAgAGIAZQAgAHMAZQB0ACAAdABvACAARgBhAGwAcwBlAC4AIABBAHMAcwBpAGcAbgAgAGEAIAB2
-AGEAbAB1AGUAIAB0AG8AIAB0AGgAZQAgAGMAbwBsAHUAbQBuACAAaQBuAHMAdABlAGEAZAAuAAAR
-TwB1AHQAcAB1AHQAIAAwAAARagBzAG8AbgBmAGkAbABlAABxUwBDAF8AYwBkADkAZQBlAGEANABj
-AGEANABkADcANAAzAGYAYgBiAGEANwBkADEAZgAyAGQAMwAwAGIANQA2AGEAZgA4AC4AUAByAG8A
-cABlAHIAdABpAGUAcwAuAFIAZQBzAG8AdQByAGMAZQBzAAC7cptI3WJZTLw5O9Wew4nrAAQgAQEI
-AyAAAQUgAQEREQQgAQEOBSABARFtFAcODhI5Dg4OET0CCAIOChFBDRJFBAABAg4EAAEODgcAAhKA
-hQ4OBCAAEjkDIAAcAyAADgYAAgIOEAoFAAERQQoEIAARPQcAAgIOEBE9AwYRPQQAABJpDAAEAg4R
-gJkSgJ0QDQQAAQ0NAyAAAgQHARJJBgADDg4ODgYAAhJJDg4FIAASgKkGIAESgKUICSADARJRHQgS
-VQUgAgEIHAMHAQgGAAIIElUOBSABHQgIBSAAEoC1BiABEoC5HAUAABKAvQYgARwSgMEIAAESgMUR
-gMkFIAASgM0HIAIBDhKAzQi3elxWGTTgiQiJhF3NgIDMkQMGEhQDBhIYAwYSDAMGElkDBhJlAwYS
-aQMGEiAFIAIODg4EIAEBAgUgAQERPQsgBAEIHQgdElESVQUgAQESWQQAABJlBQABARJpBAAAEiAD
-AAABAygACAMoAAIDKAAOBCgAET0ECAASZQQIABJpBAgAEiAIAQAIAAAAAAAeAQABAFQCFldyYXBO
-b25FeGNlcHRpb25UaHJvd3MBCAEAAgAAAAAAKAEAI1NDX2NkOWVlYTRjYTRkNzQzZmJiYTdkMWYy
-ZDMwYjU2YWY4AAAFAQAAAAAWAQARQ29weXJpZ2h0IEAgIDIwMjUAAEkBABouTkVURnJhbWV3b3Jr
-LFZlcnNpb249djQuNwEAVA4URnJhbWV3b3JrRGlzcGxheU5hbWUSLk5FVCBGcmFtZXdvcmsgNC43
-BAEAAAAAAAC0AAAAzsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIs
-IG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9r
-ZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIA
-AAAAAAAAAAAAAFBBRFBBRFC0AAAAaDsAAAAAAAAAAAAAgjsAAAAgAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAHQ7AAAAAAAAAAAAAAAAX0NvckRsbE1haW4AbXNjb3JlZS5kbGwAAAAAAP8lACAAEAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AFJlZ2V4AGtleQBnZXRfQXNzZW1ibHkAAICBQwA6AFwAVQBzAGUAcgBzAFwAawBvAHUAcwBzAFwA
+RABvAGMAdQBtAGUAbgB0AHMAXABEAFcASAAtAEIAbABvAGMAawBjAGgAYQBpAG4AXABkAGEAdABh
+AFwAcgBhAHcAXABmAGUAYQByAF8AZwByAGUAZQBkAC4AagBzAG8AbgABGVwAewBbAF4AXAB7AFwA
+fQBdACoAXAB9AAAJZABhAHQAZQAAE3QAaQBtAGUAcwB0AGEAbQBwAAAJdABpAG0AZQAAC3YAYQBs
+AHUAZQAAIWYAZQBhAHIAXwBnAHIAZQBlAGQAXwB2AGEAbAB1AGUAACl2AGEAbAB1AGUAXwBjAGwA
+YQBzAHMAaQBmAGkAYwBhAHQAaQBvAG4AACFmAGUAYQByAF8AZwByAGUAZQBkAF8AYwBsAGEAcwBz
+AAALbABhAGIAZQBsAAAZRQB4AHQAcgBlAG0AZQAgAEYAZQBhAHIAAAlGAGUAYQByAAALRwByAGUA
+ZQBkAAAbRQB4AHQAcgBlAG0AZQAgAEcAcgBlAGUAZAAAAyIAAC0iAFwAcwAqADoAXABzACoAIgA/
+ACgALgAqAD8AKQAiAD8AKAAsAHwAJAApAACAm0kAcwBOAHUAbABsACAAcAByAG8AcABlAHIAdAB5
+ACAAYwBhAG4AbgBvAHQAIABiAGUAIABzAGUAdAAgAHQAbwAgAEYAYQBsAHMAZQAuACAAQQBzAHMA
+aQBnAG4AIABhACAAdgBhAGwAdQBlACAAdABvACAAdABoAGUAIABjAG8AbAB1AG0AbgAgAGkAbgBz
+AHQAZQBhAGQALgAAEU8AdQB0AHAAdQB0ACAAMAAAEWoAcwBvAG4AZgBpAGwAZQAAcVMAQwBfAGMA
+ZAA5AGUAZQBhADQAYwBhADQAZAA3ADQAMwBmAGIAYgBhADcAZAAxAGYAMgBkADMAMABiADUANgBh
+AGYAOAAuAFAAcgBvAHAAZQByAHQAaQBlAHMALgBSAGUAcwBvAHUAcgBjAGUAcwAAAAAAmYofYkKs
+zkqpY8Qejds7lgAEIAEBCAMgAAEFIAEBEREEIAEBDgUgAQERbRQHDg4SOQ4ODhE9AggCDgoRQQ0S
+RQQAAQIOBAABDg4HAAISgIUODgQgABI5AyAAHAMgAA4GAAICDhAKBQABEUEKBCAAET0HAAICDhAR
+PQMGET0EAAASaQwABAIOEYCZEoCdEA0EAAENDQMgAAIEBwESSQYAAw4ODg4GAAISSQ4OBSAAEoCp
+BiABEoClCAkgAwESUR0IElUFIAIBCBwDBwEIBgACCBJVDgUgAR0ICAUgABKAtQYgARKAuRwFAAAS
+gL0GIAEcEoDBCAABEoDFEYDJBSAAEoDNByACAQ4SgM0It3pcVhk04IkIiYRdzYCAzJEDBhIUAwYS
+GAMGEgwDBhJZAwYSZQMGEmkDBhIgBSACDg4OBCABAQIFIAEBET0LIAQBCB0IHRJRElUFIAEBElkE
+AAASZQUAAQESaQQAABIgAwAAAQMoAAgDKAACAygADgQoABE9BAgAEmUECAASaQQIABIgCAEACAAA
+AAAAHgEAAQBUAhZXcmFwTm9uRXhjZXB0aW9uVGhyb3dzAQgBAAIAAAAAACgBACNTQ19jZDllZWE0
+Y2E0ZDc0M2ZiYmE3ZDFmMmQzMGI1NmFmOAAABQEAAAAAFgEAEUNvcHlyaWdodCBAICAyMDI1AABJ
+AQAaLk5FVEZyYW1ld29yayxWZXJzaW9uPXY0LjcBAFQOFEZyYW1ld29ya0Rpc3BsYXlOYW1lEi5O
+RVQgRnJhbWV3b3JrIDQuNwQBAAAAAAAAtAAAAM7K774BAAAAkQAAAGxTeXN0ZW0uUmVzb3VyY2Vz
+LlJlc291cmNlUmVhZGVyLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRy
+YWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkjU3lzdGVtLlJlc291cmNlcy5SdW50
+aW1lUmVzb3VyY2VTZXQCAAAAAAAAAAAAAABQQURQQURQtAAAAHg7AAAAAAAAAAAAAJI7AAAAIAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAACEOwAAAAAAAAAAAAAAAF9Db3JEbGxNYWluAG1zY29yZWUuZGxs
+AAAAAAD/JQAgABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB
 ABAAAAAYAACAAAAAAAAAAAAAAAAAAAABAAEAAAAwAACAAAAAAAAAAAAAAAAAAAABAAAAAABIAAAA
 WEAAAOwDAAAAAAAAAAAAAOwDNAAAAFYAUwBfAFYARQBSAFMASQBPAE4AXwBJAE4ARgBPAAAAAAC9
@@ -7710,7 +7967,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAwAAACUOwAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAwAAACkOwAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -7835,8 +8092,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
               <connections>
                 <connection
                   refId="Package\Load StgMarket\job created fetching from api.Connections[FlatFileConnection]"
-                  connectionManagerID="{058C9E61-AFD9-4A6C-ACCF-DF4AA2F26A8D}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[FFMarket]"
+                  connectionManagerID="{058C9E61-AFD9-4A6C-ACCF-DF4AA2F26A8D}:invalid"
+                  connectionManagerRefId="{058C9E61-AFD9-4A6C-ACCF-DF4AA2F26A8D}:invalid"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -8089,8 +8346,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
               <connections>
                 <connection
                   refId="Package\Load StgMarket\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:invalid"
+                  connectionManagerRefId="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:invalid"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -8289,8 +8546,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
               <connections>
                 <connection
                   refId="Package\Load StgNews\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -8464,8 +8721,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
               <connections>
                 <connection
                   refId="Package\Load StgNews\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{D45FB9A0-FD90-473F-AA55-0AF59262B81A}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoSourceDB]"
+                  connectionManagerID="{52474580-F15C-493C-9F93-1C86FC85A148}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoSourceDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -8707,8 +8964,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
               <connections>
                 <connection
                   refId="Package\Load StgPriceDaily\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="{2156D937-513B-4367-AB6F-F70A0D6B1330}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[FFPrices]"
+                  connectionManagerID="Package.ConnectionManagers[prices]"
+                  connectionManagerRefId="Package.ConnectionManagers[prices]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -8765,6 +9022,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                       externalMetadataColumnId="Package\Load StgPriceDaily\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[high]"
                       lineageId="Package\Load StgPriceDaily\Flat File Source.Outputs[Flat File Source Output].Columns[high]"
                       name="high"
+                      scale="8"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -8785,6 +9043,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                       externalMetadataColumnId="Package\Load StgPriceDaily\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[low]"
                       lineageId="Package\Load StgPriceDaily\Flat File Source.Outputs[Flat File Source Output].Columns[low]"
                       name="low"
+                      scale="8"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -8805,6 +9064,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                       externalMetadataColumnId="Package\Load StgPriceDaily\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[close]"
                       lineageId="Package\Load StgPriceDaily\Flat File Source.Outputs[Flat File Source Output].Columns[close]"
                       name="close"
+                      scale="8"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -8825,6 +9085,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                       externalMetadataColumnId="Package\Load StgPriceDaily\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[volume]"
                       lineageId="Package\Load StgPriceDaily\Flat File Source.Outputs[Flat File Source Output].Columns[volume]"
                       name="volume"
+                      scale="8"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -8845,6 +9106,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                       externalMetadataColumnId="Package\Load StgPriceDaily\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[quote_volume]"
                       lineageId="Package\Load StgPriceDaily\Flat File Source.Outputs[Flat File Source Output].Columns[quote_volume]"
                       name="quote_volume"
+                      scale="8"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -8885,6 +9147,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                       externalMetadataColumnId="Package\Load StgPriceDaily\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[taker_buy_volume]"
                       lineageId="Package\Load StgPriceDaily\Flat File Source.Outputs[Flat File Source Output].Columns[taker_buy_volume]"
                       name="taker_buy_volume"
+                      scale="8"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -8905,6 +9168,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                       externalMetadataColumnId="Package\Load StgPriceDaily\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[taker_buy_quote]"
                       lineageId="Package\Load StgPriceDaily\Flat File Source.Outputs[Flat File Source Output].Columns[taker_buy_quote]"
                       name="taker_buy_quote"
+                      scale="8"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -8943,48 +9207,68 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Load StgPriceDaily\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[date]"
-                      dataType="dbDate"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="date" />
                     <externalMetadataColumn
                       refId="Package\Load StgPriceDaily\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[open]"
-                      dataType="decimal"
-                      name="open"
-                      scale="8" />
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="open" />
                     <externalMetadataColumn
                       refId="Package\Load StgPriceDaily\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[high]"
-                      dataType="decimal"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="high" />
                     <externalMetadataColumn
                       refId="Package\Load StgPriceDaily\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[low]"
-                      dataType="decimal"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="low" />
                     <externalMetadataColumn
                       refId="Package\Load StgPriceDaily\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[close]"
-                      dataType="decimal"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="close" />
                     <externalMetadataColumn
                       refId="Package\Load StgPriceDaily\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[volume]"
-                      dataType="decimal"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="volume" />
                     <externalMetadataColumn
                       refId="Package\Load StgPriceDaily\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[quote_volume]"
-                      dataType="decimal"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="quote_volume" />
                     <externalMetadataColumn
                       refId="Package\Load StgPriceDaily\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[trades]"
-                      dataType="i4"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="trades" />
                     <externalMetadataColumn
                       refId="Package\Load StgPriceDaily\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[taker_buy_volume]"
-                      dataType="decimal"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="taker_buy_volume" />
                     <externalMetadataColumn
                       refId="Package\Load StgPriceDaily\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[taker_buy_quote]"
-                      dataType="decimal"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="taker_buy_quote" />
                     <externalMetadataColumn
                       refId="Package\Load StgPriceDaily\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[coin]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       name="coin" />
                   </externalMetadataColumns>
@@ -9077,8 +9361,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
               <connections>
                 <connection
                   refId="Package\Load StgPriceDaily\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -9094,24 +9378,28 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                       refId="Package\Load StgPriceDaily\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[volume]"
                       cachedDataType="decimal"
                       cachedName="volume"
+                      cachedScale="8"
                       externalMetadataColumnId="Package\Load StgPriceDaily\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[volume]"
                       lineageId="Package\Load StgPriceDaily\Flat File Source.Outputs[Flat File Source Output].Columns[volume]" />
                     <inputColumn
                       refId="Package\Load StgPriceDaily\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[quote_volume]"
                       cachedDataType="decimal"
                       cachedName="quote_volume"
+                      cachedScale="8"
                       externalMetadataColumnId="Package\Load StgPriceDaily\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[quote_volume]"
                       lineageId="Package\Load StgPriceDaily\Flat File Source.Outputs[Flat File Source Output].Columns[quote_volume]" />
                     <inputColumn
                       refId="Package\Load StgPriceDaily\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[taker_buy_volume]"
                       cachedDataType="decimal"
                       cachedName="taker_buy_volume"
+                      cachedScale="8"
                       externalMetadataColumnId="Package\Load StgPriceDaily\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[taker_buy_volume]"
                       lineageId="Package\Load StgPriceDaily\Flat File Source.Outputs[Flat File Source Output].Columns[taker_buy_volume]" />
                     <inputColumn
                       refId="Package\Load StgPriceDaily\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[taker_buy_quote]"
                       cachedDataType="decimal"
                       cachedName="taker_buy_quote"
+                      cachedScale="8"
                       externalMetadataColumnId="Package\Load StgPriceDaily\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[taker_buy_quote]"
                       lineageId="Package\Load StgPriceDaily\Flat File Source.Outputs[Flat File Source Output].Columns[taker_buy_quote]" />
                     <inputColumn
@@ -9131,18 +9419,21 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                       refId="Package\Load StgPriceDaily\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[high]"
                       cachedDataType="decimal"
                       cachedName="high"
+                      cachedScale="8"
                       externalMetadataColumnId="Package\Load StgPriceDaily\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[high_price]"
                       lineageId="Package\Load StgPriceDaily\Flat File Source.Outputs[Flat File Source Output].Columns[high]" />
                     <inputColumn
                       refId="Package\Load StgPriceDaily\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[low]"
                       cachedDataType="decimal"
                       cachedName="low"
+                      cachedScale="8"
                       externalMetadataColumnId="Package\Load StgPriceDaily\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[low_price]"
                       lineageId="Package\Load StgPriceDaily\Flat File Source.Outputs[Flat File Source Output].Columns[low]" />
                     <inputColumn
                       refId="Package\Load StgPriceDaily\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[close]"
                       cachedDataType="decimal"
                       cachedName="close"
+                      cachedScale="8"
                       externalMetadataColumnId="Package\Load StgPriceDaily\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[close_price]"
                       lineageId="Package\Load StgPriceDaily\Flat File Source.Outputs[Flat File Source Output].Columns[close]" />
                     <inputColumn
@@ -9298,8 +9589,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
               <connections>
                 <connection
                   refId="Package\Load StgTrades\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="{5A410796-1DF1-4D9A-9B52-6339461D4F9E}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[FFTrades]"
+                  connectionManagerID="Package.ConnectionManagers[Trades]"
+                  connectionManagerRefId="Package.ConnectionManagers[Trades]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -9368,26 +9659,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Load StgTrades\Flat File Source.Outputs[Flat File Source Output].Columns[date]"
-                      dataType="dbDate"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load StgTrades\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[date]"
-                      lineageId="Package\Load StgTrades\Flat File Source.Outputs[Flat File Source Output].Columns[date]"
-                      name="date"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
                       refId="Package\Load StgTrades\Flat File Source.Outputs[Flat File Source Output].Columns[buyerMaker]"
                       dataType="bool"
                       errorOrTruncationOperation="Conversion"
@@ -9428,6 +9699,26 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                           name="UseBinaryFormat">false</property>
                       </properties>
                     </outputColumn>
+                    <outputColumn
+                      refId="Package\Load StgTrades\Flat File Source.Outputs[Flat File Source Output].Columns[date]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load StgTrades\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[date]"
+                      lineageId="Package\Load StgTrades\Flat File Source.Outputs[Flat File Source Output].Columns[date]"
+                      name="date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -9444,10 +9735,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                       dataType="r4"
                       name="quantity" />
                     <externalMetadataColumn
-                      refId="Package\Load StgTrades\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[date]"
-                      dataType="dbDate"
-                      name="date" />
-                    <externalMetadataColumn
                       refId="Package\Load StgTrades\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[buyerMaker]"
                       dataType="bool"
                       name="buyerMaker" />
@@ -9456,6 +9743,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                       dataType="wstr"
                       length="50"
                       name="coin" />
+                    <externalMetadataColumn
+                      refId="Package\Load StgTrades\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[date]"
+                      dataType="dbDate"
+                      name="date" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -9539,7 +9830,7 @@ where [refTable].[aggId] = ?</property>
                 <property
                   dataType="System.String"
                   description="Indicates whether to reference metadata in an XML format."
-                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="aggId" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="price" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="quantity" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="trade_date" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="buyerMaker" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="coin_symbol" dataType="DT_WSTR" length="20" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="aggId" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="price" dataType="DT_NUMERIC" length="0" precision="18" scale="8" codePage="0"/&gt;&lt;referenceColumn name="quantity" dataType="DT_NUMERIC" length="0" precision="18" scale="8" codePage="0"/&gt;&lt;referenceColumn name="trade_date" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="buyerMaker" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="coin_symbol" dataType="DT_WSTR" length="20" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
                 <property
                   containsID="true"
                   dataType="System.String"
@@ -9557,8 +9848,8 @@ where [refTable].[aggId] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load StgTrades\Lookup.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -9611,10 +9902,12 @@ where [refTable].[aggId] = ?</property>
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load StgTrades\Lookup.Outputs[Lookup Match Output].Columns[price]"
-                      dataType="r8"
+                      dataType="numeric"
                       errorOrTruncationOperation="Copy Column"
                       lineageId="Package\Load StgTrades\Lookup.Outputs[Lookup Match Output].Columns[price]"
                       name="price"
+                      precision="18"
+                      scale="8"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -9625,10 +9918,12 @@ where [refTable].[aggId] = ?</property>
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load StgTrades\Lookup.Outputs[Lookup Match Output].Columns[quantity]"
-                      dataType="r8"
+                      dataType="numeric"
                       errorOrTruncationOperation="Copy Column"
                       lineageId="Package\Load StgTrades\Lookup.Outputs[Lookup Match Output].Columns[quantity]"
                       name="quantity"
+                      precision="18"
+                      scale="8"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -9775,8 +10070,8 @@ where [refTable].[aggId] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load StgTrades\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{B5CFE598-D09A-411C-A4E0-2D591F9858F6}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW_]"
+                  connectionManagerID="{38FE7E39-1558-4311-ADFC-8CB60E4964F3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[mohsen2.CryptoDW_]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -9834,12 +10129,16 @@ where [refTable].[aggId] = ?</property>
                       name="aggId" />
                     <externalMetadataColumn
                       refId="Package\Load StgTrades\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[price]"
-                      dataType="r8"
-                      name="price" />
+                      dataType="numeric"
+                      name="price"
+                      precision="18"
+                      scale="8" />
                     <externalMetadataColumn
                       refId="Package\Load StgTrades\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[quantity]"
-                      dataType="r8"
-                      name="quantity" />
+                      dataType="numeric"
+                      name="quantity"
+                      precision="18"
+                      scale="8" />
                     <externalMetadataColumn
                       refId="Package\Load StgTrades\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[trade_date]"
                       dataType="wstr"
@@ -10026,9 +10325,7 @@ where [refTable].[aggId] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10062,9 +10359,7 @@ where [refTable].[aggId] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10134,9 +10429,7 @@ where [refTable].[aggId] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10170,9 +10463,7 @@ where [refTable].[aggId] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10197,7 +10488,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -10207,7 +10498,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -10266,9 +10557,7 @@ where [refTable].[aggId] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10356,9 +10645,7 @@ where [refTable].[aggId] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10383,7 +10670,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -10393,7 +10680,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -10406,7 +10693,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -10416,7 +10703,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -10461,30 +10748,6 @@ where [refTable].[aggId] = ?</property>
           Size="152.8,41.6"
           Id="Package\Load FactMarketLive\Derived Column"
           TopLeft="247.999996304512,167.999997496605" />
-        <EdgeLayout
-          Id="Package\Load FactMarketLive.Paths[Lookup Match Output]"
-          TopLeft="428.999993607402,188.799997496605">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-28.1999973028898,0"
-              Start="0,0"
-              End="-20.6999973028898,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-20.6999973028898,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-58.5413853701949,5,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Load FactMarketLive.Paths[Derived Column Output]"
           TopLeft="324.399996304512,209.599997496605">
@@ -10565,6 +10828,30 @@ where [refTable].[aggId] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load FactMarketLive.Paths[Lookup Match Output]"
+          TopLeft="428.999993607402,188.799997496605">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-28.1999973028898,0"
+              Start="0,0"
+              End="-20.6999973028898,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-20.6999973028898,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-58.5413853701949,5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -10587,7 +10874,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -10597,10 +10884,23 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load FactMarketLive\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -10624,19 +10924,6 @@ where [refTable].[aggId] = ?</property>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load FactMarketLive\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -10732,9 +11019,7 @@ where [refTable].[aggId] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10768,9 +11053,7 @@ where [refTable].[aggId] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10831,7 +11114,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -10841,7 +11124,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -10854,7 +11137,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -10864,7 +11147,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -10944,9 +11227,7 @@ where [refTable].[aggId] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11053,7 +11334,7 @@ where [refTable].[aggId] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-34.9913868826627,42.1999991357326,96.3827734375,11.609375"
+              BoundingBox="-34.9913868826628,42.1999991357326,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -11088,9 +11369,7 @@ where [refTable].[aggId] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -11115,7 +11394,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11125,7 +11404,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11138,7 +11417,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11148,7 +11427,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11174,7 +11453,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11184,7 +11463,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11248,7 +11527,7 @@ where [refTable].[aggId] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-69.2913852658868,-17.609375,96.3827734375,11.609375"
+              BoundingBox="-69.2913852658867,-17.609375,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -11319,9 +11598,7 @@ where [refTable].[aggId] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11355,9 +11632,7 @@ where [refTable].[aggId] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -11382,7 +11657,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11392,7 +11667,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11405,7 +11680,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11415,7 +11690,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11499,9 +11774,7 @@ where [refTable].[aggId] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11643,9 +11916,7 @@ where [refTable].[aggId] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11679,9 +11950,7 @@ where [refTable].[aggId] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -11693,7 +11962,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11703,7 +11972,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11729,7 +11998,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11739,7 +12008,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11752,7 +12021,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11762,7 +12031,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11786,7 +12055,7 @@ where [refTable].[aggId] = ?</property>
     design-time-name="Package\Load StgBlockchain">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="170.4,41.6"
           Id="Package\Load StgBlockchain\OLE DB Destination"
@@ -11826,9 +12095,7 @@ where [refTable].[aggId] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -11851,7 +12118,7 @@ where [refTable].[aggId] = ?</property>
     design-time-name="Package\Load StgGreed">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="162.4,41.6"
           Id="Package\Load StgGreed\Script Component"
@@ -11891,9 +12158,7 @@ where [refTable].[aggId] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -11969,7 +12234,7 @@ where [refTable].[aggId] = ?</property>
     design-time-name="Package\Load StgNews">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="149.6,41.6"
           Id="Package\Load StgNews\OLE DB Source"
@@ -12009,9 +12274,7 @@ where [refTable].[aggId] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -12047,7 +12310,7 @@ where [refTable].[aggId] = ?</property>
     design-time-name="Package\Load StgPriceDaily">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="170.4,41.6"
           Id="Package\Load StgPriceDaily\OLE DB Destination"
@@ -12075,9 +12338,7 @@ where [refTable].[aggId] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -12112,76 +12373,74 @@ where [refTable].[aggId] = ?</property>
         <NodeLayout
           Size="112.8,41.6"
           Id="Package\Load StgTrades\Lookup"
-          TopLeft="320.999995216727,207.999996900559" />
-        <EdgeLayout
-          Id="Package\Load StgTrades.Paths[Lookup No Match Output]"
-          TopLeft="377.399995216727,249.599996900559">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-158.199997213483,25.3999990016222"
-              Start="0,0"
-              End="-158.199997213483,17.8999990016222">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,8.6999995008111" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,8.6999995008111"
-                    Point2="0,12.6999995008111"
-                    Point3="-4,12.6999995008111" />
-                  <mssgle:LineSegment
-                    End="-154.199997213483,12.6999995008111" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-154.199997213483,12.6999995008111"
-                    Point2="-158.199997213483,12.6999995008111"
-                    Point3="-158.199997213483,16.6999995008111" />
-                  <mssgle:LineSegment
-                    End="-158.199997213483,17.8999990016222" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-134.906385325491,17.6999995008111,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="319.571423785114,183.529408686714" />
         <EdgeLayout
           Id="Package\Load StgTrades.Paths[Flat File Source Output]"
           TopLeft="265.399998286366,169.799997779727">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="55.5999969303609,58.9999991208315"
+              EndConnector="54.1714254987484,34.5294109069873"
               Start="0,0"
-              End="48.0999969303609,58.9999991208315">
+              End="46.6714254987484,34.5294109069873">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="23.7999984651804,0" />
+                    End="23.0857127493742,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="23.7999984651804,0"
-                    Point2="27.7999984651804,0"
-                    Point3="27.7999984651804,4" />
+                    Point1="23.0857127493742,0"
+                    Point2="27.0857127493742,0"
+                    Point3="27.0857127493742,4" />
                   <mssgle:LineSegment
-                    End="27.7999984651804,54.9999991208315" />
+                    End="27.0857127493742,30.5294109069873" />
                   <mssgle:CubicBezierSegment
-                    Point1="27.7999984651804,54.9999991208315"
-                    Point2="27.7999984651804,58.9999991208315"
-                    Point3="31.7999984651804,58.9999991208315" />
+                    Point1="27.0857127493742,30.5294109069873"
+                    Point2="27.0857127493742,34.5294109069873"
+                    Point3="31.0857127493742,34.5294109069873" />
                   <mssgle:LineSegment
-                    End="48.0999969303609,58.9999991208315" />
+                    End="46.6714254987484,34.5294109069873" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load StgTrades.Paths[Lookup No Match Output]"
+          TopLeft="375.971423785114,225.129408686714">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-156.77142578187,49.8705872154667"
+              Start="0,0"
+              End="-156.77142578187,42.3705872154667">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.9352936077333" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.9352936077333"
+                    Point2="0,24.9352936077333"
+                    Point3="-4,24.9352936077333" />
+                  <mssgle:LineSegment
+                    End="-152.77142578187,24.9352936077333" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-152.77142578187,24.9352936077333"
+                    Point2="-156.77142578187,24.9352936077333"
+                    Point3="-156.77142578187,28.9352936077333" />
+                  <mssgle:LineSegment
+                    End="-156.77142578187,42.3705872154667" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
+              BoundingBox="-134.192099609685,29.9352936077333,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -12207,7 +12466,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -12217,7 +12476,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>

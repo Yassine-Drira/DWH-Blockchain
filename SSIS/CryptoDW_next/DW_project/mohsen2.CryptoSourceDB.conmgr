@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="mohsen2.CryptoSourceDB"
+  DTS:DTSID="{52474580-F15C-493C-9F93-1C86FC85A148}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=mohsen2;Initial Catalog=CryptoSourceDB;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-DW_project-{52474580-F15C-493C-9F93-1C86FC85A148}mohsen2.CryptoSourceDB;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

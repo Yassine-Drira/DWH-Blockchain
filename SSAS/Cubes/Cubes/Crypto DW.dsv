@@ -1,0 +1,321 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3f056929-60c8-427c-960c-ad244a3e37cd" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Crypto DW</ID>
+  <Name>Crypto DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Crypto DW</DataSourceID>
+  <Schema>
+    <xs:schema id="Crypto_x0020_DW" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Crypto_x0020_DW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="4a220478-c4e0-46f3-88e4-fb258bbed7b4">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_DimCoin" msprop:DbTableName="DimCoin" msprop:FriendlyName="DimCoin" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="86ae3070-088a-401d-915d-552baf360fc4">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="coin_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="coin_id" msprop:DbColumnName="coin_id" msprop:design-time-name="0e3407cc-7067-4fe6-8ad8-1f7f851d9fac" type="xs:int" />
+                  <xs:element name="coin_symbol" msprop:FriendlyName="coin_symbol" msprop:DbColumnName="coin_symbol" msprop:design-time-name="f3e6d42b-c5c8-4108-b457-9142b494a887">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="coin_name" msprop:FriendlyName="coin_name" msprop:DbColumnName="coin_name" msprop:design-time-name="91e7eba9-c49a-4241-892c-e23a198b0569" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimDate" msprop:DbTableName="DimDate" msprop:FriendlyName="DimDate" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="3a2a8876-93cb-4682-9231-6a42de0ad484">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="date_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="date_id" msprop:DbColumnName="date_id" msprop:design-time-name="7265f9f7-7c16-45bf-93ac-c99e61eb643f" type="xs:int" />
+                  <xs:element name="full_date" msprop:FriendlyName="full_date" msprop:DbColumnName="full_date" msprop:design-time-name="0e26823d-722a-416e-9d69-fc8aea7b17f1">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="day" msprop:FriendlyName="day" msprop:DbColumnName="day" msprop:design-time-name="5bb7e4f1-8c02-4325-91a3-39a8b3429d04" type="xs:int" minOccurs="0" />
+                  <xs:element name="month" msprop:FriendlyName="month" msprop:DbColumnName="month" msprop:design-time-name="b579fe89-87b4-480b-b8ff-f1cc7c5708e0" type="xs:int" minOccurs="0" />
+                  <xs:element name="year" msprop:FriendlyName="year" msprop:DbColumnName="year" msprop:design-time-name="4c209bd6-a251-47b3-bc0d-93220f4404c8" type="xs:int" minOccurs="0" />
+                  <xs:element name="week" msprop:FriendlyName="week" msprop:DbColumnName="week" msprop:design-time-name="a80f2ea9-3023-4ba5-aa93-fdc32b3a9a75" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimMood" msprop:DbTableName="DimMood" msprop:FriendlyName="DimMood" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="2a4a0bab-b158-4cac-aca1-3d89a1d61775">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="mood_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="mood_id" msprop:DbColumnName="mood_id" msprop:design-time-name="c6305067-0086-4933-a806-525ee9033aa5" type="xs:int" />
+                  <xs:element name="classification" msprop:FriendlyName="classification" msprop:DbColumnName="classification" msprop:design-time-name="332cea5f-3bd1-4be1-9b31-1a71dbfd79fc" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="min_value" msprop:FriendlyName="min_value" msprop:DbColumnName="min_value" msprop:design-time-name="d9c18c97-83fc-420e-9a07-5a54005ffc8e" type="xs:int" minOccurs="0" />
+                  <xs:element name="max_value" msprop:FriendlyName="max_value" msprop:DbColumnName="max_value" msprop:design-time-name="a59caa9f-87a3-41fe-a8d7-146755535105" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimSentiment" msprop:DbTableName="DimSentiment" msprop:FriendlyName="DimSentiment" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="43099109-1609-4ae4-b8cc-2991c3fb1873">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="sentiment_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="sentiment_id" msprop:DbColumnName="sentiment_id" msprop:design-time-name="30a0a8a3-e99d-460c-9eed-cef274601df1" type="xs:int" />
+                  <xs:element name="sentiment_class" msprop:FriendlyName="sentiment_class" msprop:DbColumnName="sentiment_class" msprop:design-time-name="9b056cdf-1ffe-4979-80b9-c2aec5d0f1e4" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="min_polarity" msprop:FriendlyName="min_polarity" msprop:DbColumnName="min_polarity" msprop:design-time-name="6bc176e8-a207-430e-a5cd-2da20bc57bf3" type="xs:double" />
+                  <xs:element name="max_polarity" msprop:FriendlyName="max_polarity" msprop:DbColumnName="max_polarity" msprop:design-time-name="3fb42259-2a5b-461f-98ca-527483d94453" type="xs:double" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimTradeType" msprop:DbTableName="DimTradeType" msprop:FriendlyName="DimTradeType" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="902da999-41a0-48f5-bc30-3ed656fa5ee6">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="trade_type_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="trade_type_id" msprop:DbColumnName="trade_type_id" msprop:design-time-name="6efe4a6a-8312-4dbd-858a-301e3fe45856" type="xs:int" />
+                  <xs:element name="label" msprop:FriendlyName="label" msprop:DbColumnName="label" msprop:design-time-name="89e1f6f6-9c1f-4fe6-b02f-c5a4042bd90f" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FactBlockchainActivity" msprop:DbTableName="FactBlockchainActivity" msprop:FriendlyName="FactBlockchainActivity" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="34e62c37-2f15-4400-a8cc-9266b81b93b9">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="blockchain_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="blockchain_id" msprop:DbColumnName="blockchain_id" msprop:design-time-name="d630306b-3d48-4197-9940-dca965bb3735" type="xs:int" />
+                  <xs:element name="date_id" msprop:FriendlyName="date_id" msprop:DbColumnName="date_id" msprop:design-time-name="a4fa21c8-68d4-4d03-bcc6-5a6b6ef3c0fa" type="xs:int" />
+                  <xs:element name="coin_id" msprop:FriendlyName="coin_id" msprop:DbColumnName="coin_id" msprop:design-time-name="ee3e13f1-cbf5-4b29-9448-c9a5470fab3d" type="xs:int" />
+                  <xs:element name="active_addresses" msprop:FriendlyName="active_addresses" msprop:DbColumnName="active_addresses" msprop:design-time-name="f6163cb8-e655-45e5-96de-94b42ee4b62a" type="xs:int" minOccurs="0" />
+                  <xs:element name="block_count" msprop:FriendlyName="block_count" msprop:DbColumnName="block_count" msprop:design-time-name="919e8c99-cd3d-4972-8c98-07a2fc33a8b5" type="xs:int" minOccurs="0" />
+                  <xs:element name="tx_count" msprop:FriendlyName="tx_count" msprop:DbColumnName="tx_count" msprop:design-time-name="9be07da0-2069-4436-852e-7bd61f4bc88e" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FactMarketSnapshot" msprop:DbTableName="FactMarketSnapshot" msprop:FriendlyName="FactMarketSnapshot" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="54d2d676-05cb-48f1-9780-99ce43d400d9">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="snapshot_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="snapshot_id" msprop:DbColumnName="snapshot_id" msprop:design-time-name="1eed8f96-87b2-4178-a534-c242e1e14682" type="xs:int" />
+                  <xs:element name="date_id" msprop:FriendlyName="date_id" msprop:DbColumnName="date_id" msprop:design-time-name="ef4cefe2-1106-4971-843b-28174b6f530f" type="xs:int" />
+                  <xs:element name="coin_id" msprop:FriendlyName="coin_id" msprop:DbColumnName="coin_id" msprop:design-time-name="a3229656-62b3-44e8-8eb8-1825b53acd3d" type="xs:int" />
+                  <xs:element name="price_usd" msprop:FriendlyName="price_usd" msprop:DbColumnName="price_usd" msprop:design-time-name="c966a007-e4c9-4147-981f-dd7f5a4d36b2" type="xs:double" minOccurs="0" />
+                  <xs:element name="market_cap" msprop:FriendlyName="market_cap" msprop:DbColumnName="market_cap" msprop:design-time-name="94e5b250-75fc-483d-8f12-ddd3d456c5b1" type="xs:double" minOccurs="0" />
+                  <xs:element name="volume_24h" msprop:FriendlyName="volume_24h" msprop:DbColumnName="volume_24h" msprop:design-time-name="26849f28-2d22-4faf-b2ec-27b14901e82d" type="xs:double" minOccurs="0" />
+                  <xs:element name="change_24h" msprop:FriendlyName="change_24h" msprop:DbColumnName="change_24h" msprop:design-time-name="52be26d5-890c-485d-8323-f4a72edc53cd" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FactMoodIndex" msprop:DbTableName="FactMoodIndex" msprop:FriendlyName="FactMoodIndex" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="1fe3fd2c-6b75-41e1-afb9-6d8fbae55018">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="mood_fact_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="mood_fact_id" msprop:DbColumnName="mood_fact_id" msprop:design-time-name="e40962b4-d615-45a4-a992-9319dc62aeee" type="xs:int" />
+                  <xs:element name="date_id" msprop:FriendlyName="date_id" msprop:DbColumnName="date_id" msprop:design-time-name="22978d26-9e25-4fa8-9045-bdd8c29b8ce3" type="xs:int" />
+                  <xs:element name="mood_id" msprop:FriendlyName="mood_id" msprop:DbColumnName="mood_id" msprop:design-time-name="b9a25bd4-7d23-4c7a-acdc-75d0df953e68" type="xs:int" />
+                  <xs:element name="greed_value" msprop:FriendlyName="greed_value" msprop:DbColumnName="greed_value" msprop:design-time-name="8ffa59c2-6056-4da8-88c4-a02f2fd23de5" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FactNewsSentiment" msprop:DbTableName="FactNewsSentiment" msprop:FriendlyName="FactNewsSentiment" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="28f58418-02f7-4cc8-8187-759ebed3dea0">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="news_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="news_id" msprop:DbColumnName="news_id" msprop:design-time-name="35b7175e-5b99-4dd2-a168-4eae2e70752c" type="xs:int" />
+                  <xs:element name="date_id" msprop:FriendlyName="date_id" msprop:DbColumnName="date_id" msprop:design-time-name="daa8b79e-0f80-4a7c-8fb5-c4a373ae0728" type="xs:int" />
+                  <xs:element name="coin_id" msprop:FriendlyName="coin_id" msprop:DbColumnName="coin_id" msprop:design-time-name="4d07f773-cca1-4ec9-b662-986247c56b42" type="xs:int" />
+                  <xs:element name="sentiment_id" msprop:FriendlyName="sentiment_id" msprop:DbColumnName="sentiment_id" msprop:design-time-name="1c6a0ff3-12f5-46e7-b9f8-1a718ae5bb0a" type="xs:int" />
+                  <xs:element name="title" msprop:FriendlyName="title" msprop:DbColumnName="title" msprop:design-time-name="7fdfe6b5-604e-43c2-8871-b24b3d67df44" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="polarity" msprop:FriendlyName="polarity" msprop:DbColumnName="polarity" msprop:design-time-name="70bc81b1-2217-4e38-81ae-ea4d168a09c3" type="xs:double" minOccurs="0" />
+                  <xs:element name="subjectivity" msprop:FriendlyName="subjectivity" msprop:DbColumnName="subjectivity" msprop:design-time-name="334c00ad-027e-4a45-b2d7-b8de1d31b23e" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FactPriceDaily" msprop:DbTableName="FactPriceDaily" msprop:FriendlyName="FactPriceDaily" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="813e4427-b3a5-43a6-b704-0991b1a8767f">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="price_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="price_id" msprop:DbColumnName="price_id" msprop:design-time-name="bbe16875-5a97-4f76-a096-9423c8b8e0cd" type="xs:int" />
+                  <xs:element name="date_id" msprop:FriendlyName="date_id" msprop:DbColumnName="date_id" msprop:design-time-name="c1a1d45c-dd1c-4130-adbe-035eeb15d371" type="xs:int" />
+                  <xs:element name="coin_id" msprop:FriendlyName="coin_id" msprop:DbColumnName="coin_id" msprop:design-time-name="28470b21-2386-442e-ab4c-95aa693df863" type="xs:int" />
+                  <xs:element name="open_price" msprop:FriendlyName="open_price" msprop:DbColumnName="open_price" msprop:design-time-name="c7490c93-d175-413f-8fa8-d1131e45fe46" type="xs:double" minOccurs="0" />
+                  <xs:element name="close_price" msprop:FriendlyName="close_price" msprop:DbColumnName="close_price" msprop:design-time-name="166cbe9b-17ca-48c7-92e4-d779629d4115" type="xs:double" minOccurs="0" />
+                  <xs:element name="high_price" msprop:FriendlyName="high_price" msprop:DbColumnName="high_price" msprop:design-time-name="88c3f16d-c148-4592-985a-0c9b6fa1c3c3" type="xs:double" minOccurs="0" />
+                  <xs:element name="low_price" msprop:FriendlyName="low_price" msprop:DbColumnName="low_price" msprop:design-time-name="0dd3e3c1-32d1-4386-a198-ba4102d3cf72" type="xs:double" minOccurs="0" />
+                  <xs:element name="volume" msprop:FriendlyName="volume" msprop:DbColumnName="volume" msprop:design-time-name="f7533538-25e0-42c7-a4dc-fa5e84e04ea4" type="xs:double" minOccurs="0" />
+                  <xs:element name="trades_count" msprop:FriendlyName="trades_count" msprop:DbColumnName="trades_count" msprop:design-time-name="8537427d-2dfb-4ff1-ab56-955d3f1e36fe" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FactTrades" msprop:DbTableName="FactTrades" msprop:FriendlyName="FactTrades" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="ec9af554-1688-4a3a-9473-e353fd483333">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="trade_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="trade_id" msprop:DbColumnName="trade_id" msprop:design-time-name="7a212a36-65d2-4b25-86db-bc2ca33c5a84" type="xs:long" />
+                  <xs:element name="date_id" msprop:FriendlyName="date_id" msprop:DbColumnName="date_id" msprop:design-time-name="443b8365-c591-414b-b1bd-bf201b0d18ad" type="xs:int" />
+                  <xs:element name="coin_id" msprop:FriendlyName="coin_id" msprop:DbColumnName="coin_id" msprop:design-time-name="be023acd-7950-414e-b0bc-8329ab72abe9" type="xs:int" />
+                  <xs:element name="price" msprop:FriendlyName="price" msprop:DbColumnName="price" msprop:design-time-name="e3a2b075-4563-4e5d-b65a-3b3812effe5a" type="xs:double" minOccurs="0" />
+                  <xs:element name="quantity" msprop:FriendlyName="quantity" msprop:DbColumnName="quantity" msprop:design-time-name="cf42e2e4-54aa-4d5f-a9b8-6cf469a99de7" type="xs:double" minOccurs="0" />
+                  <xs:element name="trade_type_id" msprop:FriendlyName="trade_type_id" msprop:DbColumnName="trade_type_id" msprop:design-time-name="ddf9d8b6-180e-41e7-92ec-9844c62a83b6" type="xs:int" minOccurs="0" />
+                  <xs:element name="trade_value" msdata:ReadOnly="true" msprop:FriendlyName="trade_value" msprop:DbColumnName="trade_value" msprop:design-time-name="dc88640d-5267-449d-a45b-5d16d206eaaf" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimCoin" />
+          <xs:field xpath="coin_id" />
+        </xs:unique>
+        <xs:unique name="dbo_DimDate_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimDate" />
+          <xs:field xpath="date_id" />
+        </xs:unique>
+        <xs:unique name="dbo_DimMood_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimMood" />
+          <xs:field xpath="mood_id" />
+        </xs:unique>
+        <xs:unique name="dbo_DimSentiment_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimSentiment" />
+          <xs:field xpath="sentiment_id" />
+        </xs:unique>
+        <xs:unique name="dbo_DimTradeType_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimTradeType" />
+          <xs:field xpath="trade_type_id" />
+        </xs:unique>
+        <xs:unique name="dbo_FactBlockchainActivity_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FactBlockchainActivity" />
+          <xs:field xpath="blockchain_id" />
+        </xs:unique>
+        <xs:unique name="dbo_FactMarketSnapshot_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FactMarketSnapshot" />
+          <xs:field xpath="snapshot_id" />
+        </xs:unique>
+        <xs:unique name="dbo_FactMoodIndex_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FactMoodIndex" />
+          <xs:field xpath="mood_fact_id" />
+        </xs:unique>
+        <xs:unique name="dbo_FactNewsSentiment_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FactNewsSentiment" />
+          <xs:field xpath="news_id" />
+        </xs:unique>
+        <xs:unique name="dbo_FactPriceDaily_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FactPriceDaily" />
+          <xs:field xpath="price_id" />
+        </xs:unique>
+        <xs:unique name="dbo_FactTrades_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FactTrades" />
+          <xs:field xpath="trade_id" />
+        </xs:unique>
+        <xs:keyref name="FK__FactTrade__date___778AC167" refer="dbo_DimDate_Constraint1">
+          <xs:selector xpath=".//dbo_FactTrades" />
+          <xs:field xpath="date_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__FactTrade__coin___787EE5A0" refer="Constraint1">
+          <xs:selector xpath=".//dbo_FactTrades" />
+          <xs:field xpath="coin_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__FactTrade__trade__797309D9" refer="dbo_DimTradeType_Constraint1">
+          <xs:selector xpath=".//dbo_FactTrades" />
+          <xs:field xpath="trade_type_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__FactPrice__coin___74AE54BC" refer="Constraint1">
+          <xs:selector xpath=".//dbo_FactPriceDaily" />
+          <xs:field xpath="coin_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__FactPrice__date___73BA3083" refer="dbo_DimDate_Constraint1">
+          <xs:selector xpath=".//dbo_FactPriceDaily" />
+          <xs:field xpath="date_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__FactNewsS__senti__7E37BEF6" refer="dbo_DimSentiment_Constraint1">
+          <xs:selector xpath=".//dbo_FactNewsSentiment" />
+          <xs:field xpath="sentiment_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__FactNewsS__coin___7D439ABD" refer="Constraint1">
+          <xs:selector xpath=".//dbo_FactNewsSentiment" />
+          <xs:field xpath="coin_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__FactNewsS__date___7C4F7684" refer="dbo_DimDate_Constraint1">
+          <xs:selector xpath=".//dbo_FactNewsSentiment" />
+          <xs:field xpath="date_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__FactMoodI__mood___09A971A2" refer="dbo_DimMood_Constraint1">
+          <xs:selector xpath=".//dbo_FactMoodIndex" />
+          <xs:field xpath="mood_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__FactMoodI__date___08B54D69" refer="dbo_DimDate_Constraint1">
+          <xs:selector xpath=".//dbo_FactMoodIndex" />
+          <xs:field xpath="date_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__FactMarke__date___04E4BC85" refer="dbo_DimDate_Constraint1">
+          <xs:selector xpath=".//dbo_FactMarketSnapshot" />
+          <xs:field xpath="date_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__FactMarke__coin___05D8E0BE" refer="Constraint1">
+          <xs:selector xpath=".//dbo_FactMarketSnapshot" />
+          <xs:field xpath="coin_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__FactBlock__date___01142BA1" refer="dbo_DimDate_Constraint1">
+          <xs:selector xpath=".//dbo_FactBlockchainActivity" />
+          <xs:field xpath="date_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__FactBlock__coin___02084FDA" refer="Constraint1">
+          <xs:selector xpath=".//dbo_FactBlockchainActivity" />
+          <xs:field xpath="coin_id" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Crypto_x0020_DW xmlns="" />
+  </Schema>
+</DataSourceView>

@@ -17,7 +17,7 @@ data = response.json()
 
 # SQL Server connection
 conn = pyodbc.connect(
-    "DRIVER={SQL Server};SERVER=localhost;DATABASE=CryptoDW_;Trusted_Connection=yes"
+    "DRIVER={SQL Server};SERVER=mohsen2;DATABASE=CryptoDW_;Trusted_Connection=yes"
 )
 cursor = conn.cursor()
 

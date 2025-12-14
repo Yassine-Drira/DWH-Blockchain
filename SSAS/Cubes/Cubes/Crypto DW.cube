@@ -1,0 +1,730 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="15ae06fa-e402-4beb-889b-6e334a603dfa" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Crypto DW</ID>
+  <Name>Crypto DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="04d5882a-7897-455d-a544-39f058d3efa1">
+      <ID>Dim Coin</ID>
+      <Name>Dim Coin</Name>
+      <DimensionID>Dim Coin</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7ed43498-3da7-40b9-be2e-2412823da5b5">
+          <AttributeID>Coin Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="bd1a049e-4746-446c-b1fb-58a1dd96188d">
+      <ID>Dim Date</ID>
+      <Name>Dim Date</Name>
+      <DimensionID>Dim Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="635aaecc-c414-494d-83fc-e4865d1cc7b7">
+          <AttributeID>Date Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="8a8c7e25-bbd8-4e3d-91c6-a71a205caf81">
+      <ID>Dim Mood</ID>
+      <Name>Dim Mood</Name>
+      <DimensionID>Dim Mood</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="946c6de4-075f-4bbf-ada2-7638fcf8b196">
+          <AttributeID>Mood Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="2c111394-fe41-4818-9bae-ca2f8ba5828a">
+      <ID>Fact News Sentiment</ID>
+      <Name>Fact News Sentiment</Name>
+      <DimensionID>Fact News Sentiment</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="61ebd207-9675-45f0-8d64-72bdf0978ddc">
+          <AttributeID>News Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="79d28ea3-0102-45ae-ab79-a0c23a258713">
+          <AttributeID>Date Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d3f2afa5-c78a-471a-b2bc-07f4857ef3f7">
+          <AttributeID>Coin Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="04a475e7-eb5d-45e3-8ce8-f9cdef4feb6d">
+          <AttributeID>Sentiment Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="2515d282-3335-4aef-a85c-0fe4bf3c3ae0">
+      <ID>Dim Sentiment</ID>
+      <Name>Dim Sentiment</Name>
+      <DimensionID>Dim Sentiment</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="078db83f-9ef7-49a9-85c4-c4e82bc5b322">
+          <AttributeID>Sentiment Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="615142ec-4681-4de2-a618-6fa46a4d35d4">
+      <ID>Dim Trade Type</ID>
+      <Name>Dim Trade Type</Name>
+      <DimensionID>Dim Trade Type</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4cc0b94d-522e-48d7-b5b4-3f44d7705079">
+          <AttributeID>Trade Type Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="f322ebb6-ae86-493b-a6f9-7b4350e1b9df">
+      <ID>Fact Blockchain Activity</ID>
+      <Name>Fact Blockchain Activity</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="b721c061-90dd-4bf1-a881-d35fd3977f83">
+          <ID>Active Addresses</ID>
+          <Name>Active Addresses</Name>
+          <Source dwd:design-time-name="7a8f22d2-ca09-49b6-9196-70b280e1abe8">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="76c070dd-194b-4198-a415-e017ef7ecc78">
+              <TableID>dbo_FactBlockchainActivity</TableID>
+              <ColumnID>active_addresses</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="16289f90-629c-47d7-90aa-bfcf2c86d2ac">
+          <ID>Block Count</ID>
+          <Name>Block Count</Name>
+          <Source dwd:design-time-name="9cf3dc10-28bb-4ecb-b65a-e0d261c1e7b5">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="db31f4d1-2ec6-49e0-8faa-e6f3245af55b">
+              <TableID>dbo_FactBlockchainActivity</TableID>
+              <ColumnID>block_count</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="95251338-8a57-47db-be07-d50ef868d653">
+          <ID>Tx Count</ID>
+          <Name>Tx Count</Name>
+          <Source dwd:design-time-name="412cc156-536f-4155-b567-74516118a496">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b2853ef0-8770-4d94-8798-c277764f2c1f">
+              <TableID>dbo_FactBlockchainActivity</TableID>
+              <ColumnID>tx_count</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="713b6d78-4724-4895-b41f-8a46f058eff4">
+          <ID>Fact Blockchain Activity Count</ID>
+          <Name>Fact Blockchain Activity Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="0f6d9f45-1f06-4e65-9c49-7e7f9309380d">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="f2d75cd1-eebf-476c-bb78-69f68812af3e">
+              <TableID>dbo_FactBlockchainActivity</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7d32cabf-64f1-4d78-9948-aee89a340d29">
+          <CubeDimensionID>Dim Coin</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="45135c22-e0f8-4650-9091-c005c68c219f">
+              <AttributeID>Coin Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="90cf3626-ad56-48db-816f-a068a819c7e0">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8d4d342d-acea-4241-b72a-d707a321d79c">
+                    <TableID>dbo_FactBlockchainActivity</TableID>
+                    <ColumnID>coin_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="56744847-197d-45c5-b36d-92f32e3b820f">
+          <CubeDimensionID>Dim Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6c541796-fce2-45fa-bca8-ecf3c2c08051">
+              <AttributeID>Date Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f74cfe0a-e4e7-48a0-863d-59656d2cb7c9">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="41bbd25f-c2f4-4fbc-beaa-b358ae6c669e">
+                    <TableID>dbo_FactBlockchainActivity</TableID>
+                    <ColumnID>date_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="73651298-1d5d-48b6-be78-9f1ecf91152e">
+      <ID>Fact Market Snapshot</ID>
+      <Name>Fact Market Snapshot</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="8155b905-9a0d-4656-9348-10834f0264f0">
+          <ID>Price Usd</ID>
+          <Name>Price Usd</Name>
+          <Source dwd:design-time-name="ae8b7171-6eac-404e-bfd3-7a7f6095bf42">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="32ab24b5-a988-4c51-9fd2-35e5be9f4877">
+              <TableID>dbo_FactMarketSnapshot</TableID>
+              <ColumnID>price_usd</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="8578f29b-c7b0-40c1-944a-c3196d98af96">
+          <ID>Market Cap</ID>
+          <Name>Market Cap</Name>
+          <Source dwd:design-time-name="e7ab90c2-9fdf-47dc-860e-71b83c52d161">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2b49385c-8d93-42de-b550-c973cc43c0cf">
+              <TableID>dbo_FactMarketSnapshot</TableID>
+              <ColumnID>market_cap</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="634fed24-b63e-4400-9c63-b9754353b1c4">
+          <ID>Volume 24h</ID>
+          <Name>Volume 24h</Name>
+          <Source dwd:design-time-name="4080751a-b724-4019-b098-946029714e05">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="885f023a-bfcc-4854-9e57-bb0bf45999f4">
+              <TableID>dbo_FactMarketSnapshot</TableID>
+              <ColumnID>volume_24h</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3be57715-1110-49a7-ae7c-0c2aea69641a">
+          <ID>Change 24h</ID>
+          <Name>Change 24h</Name>
+          <Source dwd:design-time-name="e6d547a2-5b9f-4261-b9ab-1869f646639c">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="44a153a5-aa1d-4a7d-9585-5caab3a52e90">
+              <TableID>dbo_FactMarketSnapshot</TableID>
+              <ColumnID>change_24h</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e1b23dff-178e-41af-bf5f-fe8563199393">
+          <ID>Fact Market Snapshot Count</ID>
+          <Name>Fact Market Snapshot Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="ebb68533-ade3-4e43-914b-3c379ae9aa03">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="77151052-597d-4d86-a680-bc1c273dce4d">
+              <TableID>dbo_FactMarketSnapshot</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="bbd777f9-3f64-4c11-8bfa-56e77d486671">
+          <CubeDimensionID>Dim Coin</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ab9f8c95-ac81-4ccd-9862-791ce40a995c">
+              <AttributeID>Coin Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9bbf1d4c-e7ea-4ff1-824f-c1814503ff2b">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e52801db-e3c4-411e-b922-20e65b2dff60">
+                    <TableID>dbo_FactMarketSnapshot</TableID>
+                    <ColumnID>coin_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ce1935d8-edb8-45c5-9245-e9a3dc6fa627">
+          <CubeDimensionID>Dim Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e91ff575-6b14-45f7-9d7f-6f395a3308ee">
+              <AttributeID>Date Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a63ae3d1-7318-4665-b709-f575fc22b590">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c3e7f941-ba78-403a-a064-83fda096632c">
+                    <TableID>dbo_FactMarketSnapshot</TableID>
+                    <ColumnID>date_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="6d519002-fe00-48d3-82b9-200d1ca9023a">
+      <ID>Fact Mood Index</ID>
+      <Name>Fact Mood Index</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="783f037e-7357-4c60-a1ac-07bf3baf76f9">
+          <ID>Greed Value</ID>
+          <Name>Greed Value</Name>
+          <Source dwd:design-time-name="dda995a1-8e97-4d80-9488-c17c9904c6cb">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e150ea47-e424-48d1-8c48-6ee0dcc79090">
+              <TableID>dbo_FactMoodIndex</TableID>
+              <ColumnID>greed_value</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="059e1e13-d1d9-4466-9e32-e2ee47eb0e3c">
+          <ID>Fact Mood Index Count</ID>
+          <Name>Fact Mood Index Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="e7bb13fb-547d-4c34-83a0-40262eed9bb5">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="0186148c-cadb-4365-9a00-7ab86afd0757">
+              <TableID>dbo_FactMoodIndex</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="430bfcad-dfb0-43e2-aecd-bf3c941978ae">
+          <CubeDimensionID>Dim Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="45d58be2-0daf-46e3-8e4c-dfcc5dd23b9f">
+              <AttributeID>Date Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="222cc096-4436-468d-9fac-7d718a154d1b">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4a1802b1-5bab-467b-8fbe-03976182dc61">
+                    <TableID>dbo_FactMoodIndex</TableID>
+                    <ColumnID>date_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="64265050-c877-4437-be27-dd58e200f838">
+          <CubeDimensionID>Dim Mood</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1254fc47-c356-4e09-bf03-0db355224fee">
+              <AttributeID>Mood Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="220fa62a-e8fb-4d96-b105-e0a2da64d2d7">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9fc8078e-6fd8-4ad7-8a18-5153e2c43fd1">
+                    <TableID>dbo_FactMoodIndex</TableID>
+                    <ColumnID>mood_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="5a62bf6b-5e06-4b7a-9e67-6cd8ca497314">
+      <ID>Fact News Sentiment</ID>
+      <Name>Fact News Sentiment</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="924de8a1-bab5-41fe-ab89-b8c2d746f071">
+          <ID>Polarity</ID>
+          <Name>Polarity</Name>
+          <Source dwd:design-time-name="adeed84c-9faa-4366-a522-66a4845dfb2f">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="3af6130d-9bb6-4f0f-9358-5b6113537d90">
+              <TableID>dbo_FactNewsSentiment</TableID>
+              <ColumnID>polarity</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="6525b89b-779f-442f-bbc0-cb9c1c2b4f5f">
+          <ID>Subjectivity</ID>
+          <Name>Subjectivity</Name>
+          <Source dwd:design-time-name="1b5a9e71-a4f7-476c-b7a4-fd5a91b6ff91">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="98d377b8-a0af-4bf6-9196-0fa4970b64d4">
+              <TableID>dbo_FactNewsSentiment</TableID>
+              <ColumnID>subjectivity</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e403511b-0567-49b7-a4cd-3603b4dd20be">
+          <ID>Fact News Sentiment Count</ID>
+          <Name>Fact News Sentiment Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="85a895d5-01be-4b52-8cc9-2c6c9f102008">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="e07c15c8-521e-44f8-835f-560986aa386d">
+              <TableID>dbo_FactNewsSentiment</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="a79bbf19-88d1-44b3-ad2a-1895b6a3c6ee">
+          <CubeDimensionID>Fact News Sentiment</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4448310e-0cac-40fb-933f-c69a502f452e">
+              <AttributeID>News Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="34f7ec6f-143c-417b-a874-c6badcad0615">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="936d3b1d-a12d-4f72-86a1-ae895c8957cb">
+                    <TableID>dbo_FactNewsSentiment</TableID>
+                    <ColumnID>news_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a93402ee-9804-4b1e-b8d3-75ba826e7cde">
+          <CubeDimensionID>Dim Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ae018eed-dda9-4f7d-87e2-0bdb9bfed2fe">
+              <AttributeID>Date Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="526e27c7-951e-4f22-9db5-2319877c84e3">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5eaa249b-89d4-458b-ac93-44a7affc2160">
+                    <TableID>dbo_FactNewsSentiment</TableID>
+                    <ColumnID>date_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="700d6396-57d5-4cc2-b56b-c9a62d76d3f2">
+          <CubeDimensionID>Dim Coin</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f5baf089-2f36-466b-877e-462f29ff0a44">
+              <AttributeID>Coin Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c045db88-8245-4952-8081-d4c1de7785fd">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="dfebf34c-953f-4c56-bfb3-f01716c9f7b0">
+                    <TableID>dbo_FactNewsSentiment</TableID>
+                    <ColumnID>coin_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6b8ecc75-7d11-4ab0-afad-8f9906236c08">
+          <CubeDimensionID>Dim Sentiment</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3d003b82-a540-4d96-b7df-75913bee1a29">
+              <AttributeID>Sentiment Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1a81e6b0-2708-40f3-9519-f322a4e6518f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f7e15be7-0197-4336-9aee-fea412676053">
+                    <TableID>dbo_FactNewsSentiment</TableID>
+                    <ColumnID>sentiment_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="30429c76-3cbf-4029-8976-d5a4c3450b19">
+      <ID>Fact Price Daily</ID>
+      <Name>Fact Price Daily</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="c89d2b51-e898-49ec-bfa4-3abd5d6cc950">
+          <ID>Close Price</ID>
+          <Name>Close Price</Name>
+          <Source dwd:design-time-name="f0d49788-809d-40f6-b725-eeb232a3608a">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1133c4ef-5a04-4922-87e3-d8c2ebb581f6">
+              <TableID>dbo_FactPriceDaily</TableID>
+              <ColumnID>close_price</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1c124ff0-d0e2-45da-b9ca-4155268bec89">
+          <ID>Volume</ID>
+          <Name>Volume</Name>
+          <Source dwd:design-time-name="e7bc46ed-1535-45d5-b360-2da827c09d30">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="810e6aa0-39a0-4864-9fa2-bed0201733fb">
+              <TableID>dbo_FactPriceDaily</TableID>
+              <ColumnID>volume</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="82838bdb-b314-47a6-a1b3-8d9bc29631c0">
+          <ID>Trades Count</ID>
+          <Name>Trades Count</Name>
+          <Source dwd:design-time-name="4351ed22-0db7-4164-bbd2-941a8154be8e">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d948e520-7bf7-466b-b960-fcf579116b73">
+              <TableID>dbo_FactPriceDaily</TableID>
+              <ColumnID>trades_count</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="5e87670b-318a-4c08-ae55-c9afdad56859">
+          <ID>Fact Price Daily Count</ID>
+          <Name>Fact Price Daily Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="73702349-b172-47e1-b0d7-de50494f98de">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="890fb5f1-b8aa-4f5b-a896-71c29bf30ab1">
+              <TableID>dbo_FactPriceDaily</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="433974c2-e4c8-4e95-ad21-555c1bf917c7">
+          <CubeDimensionID>Dim Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="dfeeaade-b3d5-49ce-a067-b56e79bf8d99">
+              <AttributeID>Date Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="35ab6e76-659b-4517-a6b6-1e2b12ef5c54">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="53fb65e7-7627-40b8-bf36-89337b69246b">
+                    <TableID>dbo_FactPriceDaily</TableID>
+                    <ColumnID>date_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="61da6ef6-c228-42bc-bacf-86fc72f68dd2">
+          <CubeDimensionID>Dim Coin</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1d49dc33-bcbc-4ae1-a35d-232127b52ef9">
+              <AttributeID>Coin Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ce138cbe-03f4-4400-adc1-4c5306dbadd6">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a77b0615-91e5-4068-b0fb-5af28ec51c73">
+                    <TableID>dbo_FactPriceDaily</TableID>
+                    <ColumnID>coin_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="f323a227-9131-4d98-a4e2-5ced39e0d55c">
+      <ID>Fact Trades</ID>
+      <Name>Fact Trades</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="712015dc-9b4a-4b9c-b19c-c6d6f1a9551b">
+          <ID>Price</ID>
+          <Name>Price</Name>
+          <Source dwd:design-time-name="ba820f7e-f2b0-47a7-8b40-002eccd58f1b">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="bdcce704-31bc-4ae8-b5a4-a8502bf0f0ad">
+              <TableID>dbo_FactTrades</TableID>
+              <ColumnID>price</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f298b433-06bb-47b7-989a-280d27b5169b">
+          <ID>Quantity</ID>
+          <Name>Quantity</Name>
+          <Source dwd:design-time-name="e781455c-604e-4994-a1de-4da6ffedd2bb">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="65f9eebd-4616-4055-b9ea-80a731244371">
+              <TableID>dbo_FactTrades</TableID>
+              <ColumnID>quantity</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f34828ec-ad84-4639-8dd2-b2360126d567">
+          <ID>Trade Value</ID>
+          <Name>Trade Value</Name>
+          <Source dwd:design-time-name="dc7af222-bf4e-4dbb-8208-8728ffcf1324">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9897838a-fc60-4ff3-b835-893f57b530fe">
+              <TableID>dbo_FactTrades</TableID>
+              <ColumnID>trade_value</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4b10d50c-1ee1-4cc4-aa78-ffc2e0a52bc0">
+          <ID>Fact Trades Count</ID>
+          <Name>Fact Trades Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="0c6c7869-07a8-489d-9406-5c28a2d841dc">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="0b5532fe-2682-4786-b6b7-c5d0d38e9aab">
+              <TableID>dbo_FactTrades</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8c61c90f-0f3d-4196-a4b0-2653cd86e2c2">
+          <CubeDimensionID>Dim Trade Type</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="de6e9c89-30eb-4fad-bf53-fed55f069a93">
+              <AttributeID>Trade Type Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f07e42fa-c3bb-4415-86b4-214be0ba06be">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b54fb8b8-6e0d-4302-9e36-0ae34de5bd27">
+                    <TableID>dbo_FactTrades</TableID>
+                    <ColumnID>trade_type_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6ea4a059-af91-48be-82d1-432d78b12c79">
+          <CubeDimensionID>Dim Coin</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f9ad1ada-d4f5-4018-818c-634b8fc83ea7">
+              <AttributeID>Coin Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d3e32f95-6594-4f9d-aba1-f8c4d40975c8">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="455e88b7-975b-43b7-ba2a-c7d34becc681">
+                    <TableID>dbo_FactTrades</TableID>
+                    <ColumnID>coin_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b93c5989-1d42-4a34-a581-aa9e058e27d8">
+          <CubeDimensionID>Dim Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7e3a2cc5-580a-4470-87b3-a17aa916a0d2">
+              <AttributeID>Date Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1c60e2b8-4641-40eb-b97b-6382b7d23125">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e3c82398-e493-42f4-a25b-2f09f9b2d281">
+                    <TableID>dbo_FactTrades</TableID>
+                    <ColumnID>date_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="7223c55c-e14b-4722-a4ea-8cbde7d7d6b8">
+    <DataSourceViewID>Crypto DW</DataSourceViewID>
+  </Source>
+</Cube>
