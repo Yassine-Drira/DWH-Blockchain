@@ -39,6 +39,10 @@
       <Name>Dim Trade Type.dim</Name>
       <FullPath>Dim Trade Type.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>DimTitle.dim</Name>
+      <FullPath>DimTitle.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>

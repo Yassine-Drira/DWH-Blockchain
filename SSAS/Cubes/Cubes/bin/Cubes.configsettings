@@ -26,6 +26,9 @@
       <Dimension>
         <ID>Dim Trade Type</ID>
       </Dimension>
+      <Dimension>
+        <ID>DimTitle</ID>
+      </Dimension>
     </Dimensions>
     <Cubes>
       <Cube>
