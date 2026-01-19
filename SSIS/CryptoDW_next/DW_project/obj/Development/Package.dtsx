@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="95"
-  DTS:VersionGUID="{9118A206-4892-4061-B821-3C3982A6184B}">
+  DTS:VersionBuild="97"
+  DTS:VersionGUID="{37292019-EE74-40A4-B440-6EF1325F459E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -10488,7 +10488,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -10498,7 +10498,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -10521,26 +10521,26 @@ where [refTable].[aggId] = ?</property>
         <NodeLayout
           Size="112.8,41.6"
           Id="Package\Load FactBlockchain\Lookup"
-          TopLeft="341.999994903803,203.999996960163" />
+          TopLeft="338.66666162014,135.999997973442" />
         <NodeLayout
           Size="170.4,41.6"
           Id="Package\Load FactBlockchain\OLE DB Destination"
-          TopLeft="147.999997794628,382.999994292855" />
+          TopLeft="144.666664510965,314.999995306134" />
         <NodeLayout
           Size="149.6,41.6"
           Id="Package\Load FactBlockchain\OLE DB Source"
-          TopLeft="321.999995201826,100.999998494983" />
+          TopLeft="318.666661918163,32.9999995082619" />
         <NodeLayout
           Size="121.6,41.6"
           Id="Package\Load FactBlockchain\Lookup 1"
-          TopLeft="334.999995008111,331.999995052814" />
+          TopLeft="331.666661724448,263.999996066093" />
         <NodeLayout
           Size="152.8,41.6"
           Id="Package\Load FactBlockchain\Derived Column"
-          TopLeft="207.999996900559,267.99999666214" />
+          TopLeft="204.666663616896,199.999997675419" />
         <EdgeLayout
           Id="Package\Load FactBlockchain.Paths[OLE DB Source Output]"
-          TopLeft="397.599995052815,142.599998494983">
+          TopLeft="394.266661769152,74.5999995082619">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -10562,7 +10562,7 @@ where [refTable].[aggId] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load FactBlockchain.Paths[Lookup Match Output1]"
-          TopLeft="334.999995008111,352.799995052814">
+          TopLeft="331.666661724448,284.799996066093">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -10573,9 +10573,9 @@ where [refTable].[aggId] = ?</property>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-97.7999972134828,0" />
+                    End="-97.799997213483,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="-97.7999972134828,0"
+                    Point1="-97.799997213483,0"
                     Point2="-101.799997213483,0"
                     Point3="-101.799997213483,4" />
                   <mssgle:LineSegment
@@ -10592,7 +10592,7 @@ where [refTable].[aggId] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load FactBlockchain.Paths[Lookup Match Output]"
-          TopLeft="341.999994903803,224.799996960163">
+          TopLeft="338.66666162014,156.799997973442">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -10622,7 +10622,7 @@ where [refTable].[aggId] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load FactBlockchain.Paths[Derived Column Output]"
-          TopLeft="360.799996900559,288.79999666214">
+          TopLeft="357.466663616896,220.799997675419">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -10670,7 +10670,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -10680,7 +10680,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -10693,7 +10693,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -10703,7 +10703,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -10731,26 +10731,26 @@ where [refTable].[aggId] = ?</property>
         <NodeLayout
           Size="112.8,41.6"
           Id="Package\Load FactMarketLive\Lookup"
-          TopLeft="428.999993607402,167.999997496605" />
+          TopLeft="226.333329960704,100.666665166617" />
         <NodeLayout
           Size="170.4,41.6"
           Id="Package\Load FactMarketLive\OLE DB Destination"
-          TopLeft="407.999993494579,357.023524915275" />
+          TopLeft="205.333329847881,289.690192585287" />
         <NodeLayout
           Size="149.6,41.6"
           Id="Package\Load FactMarketLive\OLE DB Source"
-          TopLeft="415.999993801117,74.9999988824129" />
+          TopLeft="213.333330154419,7.66666655242439" />
         <NodeLayout
           Size="121.6,41.6"
           Id="Package\Load FactMarketLive\Lookup 1"
-          TopLeft="430.9999935776,251.999996244907" />
+          TopLeft="228.333329930902,184.666663914919" />
         <NodeLayout
           Size="152.8,41.6"
           Id="Package\Load FactMarketLive\Derived Column"
-          TopLeft="247.999996304512,167.999997496605" />
+          TopLeft="45.3333326578139,100.666665166617" />
         <EdgeLayout
           Id="Package\Load FactMarketLive.Paths[Derived Column Output]"
-          TopLeft="324.399996304512,209.599997496605">
+          TopLeft="121.733332657814,142.266665166617">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -10784,7 +10784,7 @@ where [refTable].[aggId] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load FactMarketLive.Paths[OLE DB Source Output]"
-          TopLeft="488.099993704259,116.599998882413">
+          TopLeft="285.433330057561,49.2666665524245">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -10806,7 +10806,7 @@ where [refTable].[aggId] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load FactMarketLive.Paths[Lookup Match Output1]"
-          TopLeft="492.499993536089,293.599996244907">
+          TopLeft="289.833329889391,226.266663914919">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -10830,7 +10830,7 @@ where [refTable].[aggId] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load FactMarketLive.Paths[Lookup Match Output]"
-          TopLeft="428.999993607402,188.799997496605">
+          TopLeft="226.333329960704,121.466665166617">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -10874,7 +10874,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -10884,7 +10884,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -10910,7 +10910,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -10920,7 +10920,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11114,7 +11114,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11124,7 +11124,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11137,7 +11137,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11147,7 +11147,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11394,7 +11394,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11404,7 +11404,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11417,7 +11417,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11427,7 +11427,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11453,7 +11453,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11463,7 +11463,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11478,26 +11478,26 @@ where [refTable].[aggId] = ?</property>
         <NodeLayout
           Size="112.8,41.6"
           Id="Package\Load FactPrice\Lookup"
-          TopLeft="358.999994650483,162.999997571111" />
+          TopLeft="408.999993905425,114.428569723453" />
         <NodeLayout
           Size="149.6,41.6"
           Id="Package\Load FactPrice\OLE DB Source"
-          TopLeft="354.999994710088,59.9999991059303" />
+          TopLeft="404.99999396503,11.4285712582724" />
         <NodeLayout
           Size="121.6,41.6"
           Id="Package\Load FactPrice\Lookup 1"
-          TopLeft="359.999994635582,270.999995961785" />
+          TopLeft="409.999993890524,222.428568114127" />
         <NodeLayout
           Size="152.8,41.6"
           Id="Package\Load FactPrice\Derived Column"
-          TopLeft="163.99999755621,199.599997764826" />
+          TopLeft="213.999996811152,151.028569917168" />
         <NodeLayout
           Size="170.4,41.6"
           Id="Package\Load FactPrice\OLE DB Destination"
-          TopLeft="410.999993875623,379.999994337559" />
+          TopLeft="460.999993130565,331.428566489901" />
         <EdgeLayout
           Id="Package\Load FactPrice.Paths[Lookup Match Output1]"
-          TopLeft="358.999994650483,183.799997571111">
+          TopLeft="408.999993905425,135.228569723453">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -11533,13 +11533,13 @@ where [refTable].[aggId] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load FactPrice.Paths[Lookup Match Output]"
-          TopLeft="420.799994635582,312.599995961785">
+          TopLeft="470.799993890524,264.028568114127">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="75.3999992400409,67.3999983757734"
+              EndConnector="75.399999240041,67.3999983757734"
               Start="0,0"
-              End="75.3999992400409,59.8999983757734">
+              End="75.399999240041,59.8999983757734">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -11550,26 +11550,26 @@ where [refTable].[aggId] = ?</property>
                     Point2="0,33.6999991878867"
                     Point3="4,33.6999991878867" />
                   <mssgle:LineSegment
-                    End="71.3999992400409,33.6999991878867" />
+                    End="71.399999240041,33.6999991878867" />
                   <mssgle:CubicBezierSegment
-                    Point1="71.3999992400409,33.6999991878867"
-                    Point2="75.3999992400409,33.6999991878867"
-                    Point3="75.3999992400409,37.6999991878867" />
+                    Point1="71.399999240041,33.6999991878867"
+                    Point2="75.399999240041,33.6999991878867"
+                    Point3="75.399999240041,37.6999991878867" />
                   <mssgle:LineSegment
-                    End="75.3999992400409,59.8999983757734" />
+                    End="75.399999240041,59.8999983757734" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-10.4913870987296,38.6999991878867,96.3827734375,11.609375"
+              BoundingBox="-10.4913870987295,38.6999991878867,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load FactPrice.Paths[Derived Column Output]"
-          TopLeft="240.39999755621,241.199997764826">
+          TopLeft="290.399996811152,192.628569917168">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -11603,7 +11603,7 @@ where [refTable].[aggId] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load FactPrice.Paths[OLE DB Source Output]"
-          TopLeft="429.799994710088,101.59999910593">
+          TopLeft="479.79999396503,53.0285712582721">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -11657,7 +11657,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11667,7 +11667,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11680,7 +11680,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11690,7 +11690,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11962,7 +11962,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11972,7 +11972,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11998,7 +11998,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -12008,7 +12008,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -12021,7 +12021,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -12031,7 +12031,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -12059,14 +12059,14 @@ where [refTable].[aggId] = ?</property>
         <NodeLayout
           Size="170.4,41.6"
           Id="Package\Load StgBlockchain\OLE DB Destination"
-          TopLeft="161.999997586012,247.999996304512" />
+          TopLeft="115.199998283386,189.999997168779" />
         <NodeLayout
           Size="150.4,74.4"
           Id="Package\Load StgBlockchain\Flat File Source"
-          TopLeft="275.99999588728,97.9999985396862" />
+          TopLeft="229.199996584654,39.9999994039535" />
         <EdgeLayout
           Id="Package\Load StgBlockchain.Paths[Flat File Source Output]"
-          TopLeft="351.19999588728,172.399998539686">
+          TopLeft="304.399996584654,114.399999403953">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -12083,9 +12083,9 @@ where [refTable].[aggId] = ?</property>
                     Point2="0,37.7999988824129"
                     Point3="-4,37.7999988824129" />
                   <mssgle:LineSegment
-                    End="-99.9999983012676,37.7999988824129" />
+                    End="-99.999998301268,37.7999988824129" />
                   <mssgle:CubicBezierSegment
-                    Point1="-99.9999983012676,37.7999988824129"
+                    Point1="-99.999998301268,37.7999988824129"
                     Point2="-103.999998301268,37.7999988824129"
                     Point3="-103.999998301268,41.7999988824129" />
                   <mssgle:LineSegment
@@ -12122,14 +12122,14 @@ where [refTable].[aggId] = ?</property>
         <NodeLayout
           Size="162.4,41.6"
           Id="Package\Load StgGreed\Script Component"
-          TopLeft="268.999995991588,76.9999988526106" />
+          TopLeft="153.999997705221,12.9999998062849" />
         <NodeLayout
           Size="170.4,41.6"
           Id="Package\Load StgGreed\OLE DB Destination"
-          TopLeft="354.999994710088,228.999996587634" />
+          TopLeft="239.999996423721,164.999997541308" />
         <EdgeLayout
           Id="Package\Load StgGreed.Paths[Output 0]"
-          TopLeft="350.199995991588,118.599998852611">
+          TopLeft="235.199997705222,54.5999998062853">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -12365,52 +12365,18 @@ where [refTable].[aggId] = ?</property>
         <NodeLayout
           Size="170.4,41.6"
           Id="Package\Load StgTrades\OLE DB Destination"
-          TopLeft="133.999998003244,274.999995902181" />
+          TopLeft="117.499998249113,145.499997831881" />
         <NodeLayout
           Size="150.4,41.6"
           Id="Package\Load StgTrades\Flat File Source"
-          TopLeft="114.999998286366,148.999997779727" />
+          TopLeft="98.4999985322352,19.4999997094273" />
         <NodeLayout
           Size="112.8,41.6"
           Id="Package\Load StgTrades\Lookup"
-          TopLeft="319.571423785114,183.529408686714" />
-        <EdgeLayout
-          Id="Package\Load StgTrades.Paths[Flat File Source Output]"
-          TopLeft="265.399998286366,169.799997779727">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="54.1714254987484,34.5294109069873"
-              Start="0,0"
-              End="46.6714254987484,34.5294109069873">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="23.0857127493742,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="23.0857127493742,0"
-                    Point2="27.0857127493742,0"
-                    Point3="27.0857127493742,4" />
-                  <mssgle:LineSegment
-                    End="27.0857127493742,30.5294109069873" />
-                  <mssgle:CubicBezierSegment
-                    Point1="27.0857127493742,30.5294109069873"
-                    Point2="27.0857127493742,34.5294109069873"
-                    Point3="31.0857127493742,34.5294109069873" />
-                  <mssgle:LineSegment
-                    End="46.6714254987484,34.5294109069873" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="303.071424030983,54.0294106164143" />
         <EdgeLayout
           Id="Package\Load StgTrades.Paths[Lookup No Match Output]"
-          TopLeft="375.971423785114,225.129408686714">
+          TopLeft="359.471424030983,95.6294106164143">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -12444,6 +12410,40 @@ where [refTable].[aggId] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load StgTrades.Paths[Flat File Source Output]"
+          TopLeft="248.899998532235,40.2999997094273">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="54.1714254987484,34.5294109069873"
+              Start="0,0"
+              End="46.6714254987484,34.5294109069873">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="23.0857127493742,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="23.0857127493742,0"
+                    Point2="27.0857127493742,0"
+                    Point3="27.0857127493742,4" />
+                  <mssgle:LineSegment
+                    End="27.0857127493742,30.5294109069873" />
+                  <mssgle:CubicBezierSegment
+                    Point1="27.0857127493742,30.5294109069873"
+                    Point2="27.0857127493742,34.5294109069873"
+                    Point3="31.0857127493742,34.5294109069873" />
+                  <mssgle:LineSegment
+                    End="46.6714254987484,34.5294109069873" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -12466,7 +12466,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -12476,7 +12476,7 @@ where [refTable].[aggId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>

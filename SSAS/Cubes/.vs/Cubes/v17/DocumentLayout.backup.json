@@ -7,28 +7,24 @@
       "RelativeMoniker": "D:0:0:{AFB4D3F3-A31A-496E-080F-E60AD7831A1E}|Cubes\\Cubes.dwproj|solutionrelative:Cubes\\NewCube.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFB4D3F3-A31A-496E-080F-E60AD7831A1E}|Cubes\\Cubes.dwproj|C:\\Users\\kouss\\Documents\\DWH-Blockchain\\SSAS\\Cubes\\Cubes\\DimTitle.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
-      "RelativeMoniker": "D:0:0:{AFB4D3F3-A31A-496E-080F-E60AD7831A1E}|Cubes\\Cubes.dwproj|solutionrelative:Cubes\\DimTitle.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+      "AbsoluteMoniker": "D:0:0:{AFB4D3F3-A31A-496E-080F-E60AD7831A1E}|Cubes\\Cubes.dwproj|C:\\Users\\kouss\\Documents\\DWH-Blockchain\\SSAS\\Cubes\\Cubes\\Dim Trade Type.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{AFB4D3F3-A31A-496E-080F-E60AD7831A1E}|Cubes\\Cubes.dwproj|solutionrelative:Cubes\\Dim Trade Type.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AFB4D3F3-A31A-496E-080F-E60AD7831A1E}|Cubes\\Cubes.dwproj|C:\\Users\\kouss\\Documents\\DWH-Blockchain\\SSAS\\Cubes\\Cubes\\Dim Sentiment.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
       "RelativeMoniker": "D:0:0:{AFB4D3F3-A31A-496E-080F-E60AD7831A1E}|Cubes\\Cubes.dwproj|solutionrelative:Cubes\\Dim Sentiment.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AFB4D3F3-A31A-496E-080F-E60AD7831A1E}|Cubes\\Cubes.dwproj|C:\\Users\\kouss\\Documents\\DWH-Blockchain\\SSAS\\Cubes\\Cubes\\Dim Coin.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{AFB4D3F3-A31A-496E-080F-E60AD7831A1E}|Cubes\\Cubes.dwproj|solutionrelative:Cubes\\Dim Coin.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AFB4D3F3-A31A-496E-080F-E60AD7831A1E}|Cubes\\Cubes.dwproj|C:\\Users\\kouss\\Documents\\DWH-Blockchain\\SSAS\\Cubes\\Cubes\\Dim Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
       "RelativeMoniker": "D:0:0:{AFB4D3F3-A31A-496E-080F-E60AD7831A1E}|Cubes\\Cubes.dwproj|solutionrelative:Cubes\\Dim Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFB4D3F3-A31A-496E-080F-E60AD7831A1E}|Cubes\\Cubes.dwproj|C:\\Users\\kouss\\Documents\\DWH-Blockchain\\SSAS\\Cubes\\Cubes\\Dim Trade Type.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
-      "RelativeMoniker": "D:0:0:{AFB4D3F3-A31A-496E-080F-E60AD7831A1E}|Cubes\\Cubes.dwproj|solutionrelative:Cubes\\Dim Trade Type.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AFB4D3F3-A31A-496E-080F-E60AD7831A1E}|Cubes\\Cubes.dwproj|C:\\Users\\kouss\\Documents\\DWH-Blockchain\\SSAS\\Cubes\\Cubes\\Dim Mood.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
       "RelativeMoniker": "D:0:0:{AFB4D3F3-A31A-496E-080F-E60AD7831A1E}|Cubes\\Cubes.dwproj|solutionrelative:Cubes\\Dim Mood.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB4D3F3-A31A-496E-080F-E60AD7831A1E}|Cubes\\Cubes.dwproj|C:\\Users\\kouss\\Documents\\DWH-Blockchain\\SSAS\\Cubes\\Cubes\\Dim Coin.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
-      "RelativeMoniker": "D:0:0:{AFB4D3F3-A31A-496E-080F-E60AD7831A1E}|Cubes\\Cubes.dwproj|solutionrelative:Cubes\\Dim Coin.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AFB4D3F3-A31A-496E-080F-E60AD7831A1E}|Cubes\\Cubes.dwproj|C:\\Users\\kouss\\Documents\\DWH-Blockchain\\SSAS\\Cubes\\Cubes\\Crypto DW.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
@@ -42,30 +38,42 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DimTitle.dim [Design]",
-              "DocumentMoniker": "C:\\Users\\kouss\\Documents\\DWH-Blockchain\\SSAS\\Cubes\\Cubes\\DimTitle.dim",
-              "RelativeDocumentMoniker": "Cubes\\DimTitle.dim",
-              "ToolTip": "C:\\Users\\kouss\\Documents\\DWH-Blockchain\\SSAS\\Cubes\\Cubes\\DimTitle.dim [Design]",
-              "RelativeToolTip": "Cubes\\DimTitle.dim [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-17T23:27:56.256Z",
-              "EditorCaption": " [Design]"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "NewCube.cube [Design]",
               "DocumentMoniker": "C:\\Users\\kouss\\Documents\\DWH-Blockchain\\SSAS\\Cubes\\Cubes\\NewCube.cube",
               "RelativeDocumentMoniker": "Cubes\\NewCube.cube",
-              "ToolTip": "C:\\Users\\kouss\\Documents\\DWH-Blockchain\\SSAS\\Cubes\\Cubes\\NewCube.cube [Design]",
-              "RelativeToolTip": "Cubes\\NewCube.cube [Design]",
+              "ToolTip": "C:\\Users\\kouss\\Documents\\DWH-Blockchain\\SSAS\\Cubes\\Cubes\\NewCube.cube [Design]*",
+              "RelativeToolTip": "Cubes\\NewCube.cube [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-12-16T23:20:49.816Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Dim Date.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\kouss\\Documents\\DWH-Blockchain\\SSAS\\Cubes\\Cubes\\Dim Date.dim",
+              "RelativeDocumentMoniker": "Cubes\\Dim Date.dim",
+              "ToolTip": "C:\\Users\\kouss\\Documents\\DWH-Blockchain\\SSAS\\Cubes\\Cubes\\Dim Date.dim [Design]",
+              "RelativeToolTip": "Cubes\\Dim Date.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-16T23:20:53.719Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Dim Coin.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\kouss\\Documents\\DWH-Blockchain\\SSAS\\Cubes\\Cubes\\Dim Coin.dim",
+              "RelativeDocumentMoniker": "Cubes\\Dim Coin.dim",
+              "ToolTip": "C:\\Users\\kouss\\Documents\\DWH-Blockchain\\SSAS\\Cubes\\Cubes\\Dim Coin.dim [Design]",
+              "RelativeToolTip": "Cubes\\Dim Coin.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-16T23:29:23.529Z",
               "EditorCaption": " [Design]"
             },
             {
@@ -82,25 +90,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Dim Trade Type.dim [Design]",
               "DocumentMoniker": "C:\\Users\\kouss\\Documents\\DWH-Blockchain\\SSAS\\Cubes\\Cubes\\Dim Trade Type.dim",
               "RelativeDocumentMoniker": "Cubes\\Dim Trade Type.dim",
               "ToolTip": "C:\\Users\\kouss\\Documents\\DWH-Blockchain\\SSAS\\Cubes\\Cubes\\Dim Trade Type.dim [Design]",
               "RelativeToolTip": "Cubes\\Dim Trade Type.dim [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-16T23:29:44.094Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Dim Date.dim [Design]",
-              "DocumentMoniker": "C:\\Users\\kouss\\Documents\\DWH-Blockchain\\SSAS\\Cubes\\Cubes\\Dim Date.dim",
-              "RelativeDocumentMoniker": "Cubes\\Dim Date.dim",
-              "ToolTip": "C:\\Users\\kouss\\Documents\\DWH-Blockchain\\SSAS\\Cubes\\Cubes\\Dim Date.dim [Design]",
-              "RelativeToolTip": "Cubes\\Dim Date.dim [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-16T23:20:53.719Z",
+              "WhenOpened": "2025-12-16T23:29:44.094Z",
               "EditorCaption": " [Design]"
             },
             {
@@ -117,17 +114,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Dim Coin.dim [Design]",
-              "DocumentMoniker": "C:\\Users\\kouss\\Documents\\DWH-Blockchain\\SSAS\\Cubes\\Cubes\\Dim Coin.dim",
-              "RelativeDocumentMoniker": "Cubes\\Dim Coin.dim",
-              "ToolTip": "C:\\Users\\kouss\\Documents\\DWH-Blockchain\\SSAS\\Cubes\\Cubes\\Dim Coin.dim [Design]",
-              "RelativeToolTip": "Cubes\\Dim Coin.dim [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-16T23:29:23.529Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "Crypto DW.dsv [Design]",
               "DocumentMoniker": "C:\\Users\\kouss\\Documents\\DWH-Blockchain\\SSAS\\Cubes\\Cubes\\Crypto DW.dsv",
               "RelativeDocumentMoniker": "Cubes\\Crypto DW.dsv",
